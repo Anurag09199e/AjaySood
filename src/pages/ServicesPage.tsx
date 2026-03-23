@@ -1,7 +1,6 @@
 import { Stethoscope } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Services from '../components/Services';
-import Specialties from '../components/Specialties';
 import CTABanner from '../components/CTABanner';
 
 const ServicesPage = () => {
@@ -59,7 +58,6 @@ const ServicesPage = () => {
       </section>
 
       <Services />
-      <Specialties />
       <CTABanner />
     </div>
   );
