@@ -9,10 +9,11 @@ const About = () => {
 
           {/* LEFT: Image & Credentials */}
           <div className="about-img-stack animate-left">
-            <div className="about-img-primary">
+            <div className="about-img-primary" style={{ width: "500px", height: "500px", objectFit: "cover", marginLeft: "50px" }}>
               <img
-                src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80"
+                src="src/assets/image/doctor.jpeg"
                 alt="Dr. Dheeraj Gaur"
+
               />
             </div>
 

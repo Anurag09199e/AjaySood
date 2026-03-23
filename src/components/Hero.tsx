@@ -1,8 +1,32 @@
+import { useState, useEffect } from 'react';
 import { ArrowRight, Heart, Stethoscope, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import clinicFrontImg from '../assets/clinic-front.webp';
 
+// Slider images
+const sliderImages = [
+  clinicFrontImg,
+  'src/assets/clinic-front.webp',
+  'src/assets/clinic.jpeg',
+
+];
+
 const Hero = () => {
+  const [currentIdx, setCurrentIdx] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentIdx((prev) => (prev + 1) % sliderImages.length);
+        setIsTransitioning(false);
+      }, 500); // Wait for fade out
+    }, 10000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   const features = [
     { icon: Heart, value: '5k+', label: 'Pets Served', color: 'teal' },
     { icon: Stethoscope, value: 'Multi-Speciality', label: 'Veterinarians', color: 'gold' },
@@ -21,6 +45,7 @@ const Hero = () => {
             DD's MaxxPet Clinic — fostering compassion and{' '}
             <span className="hero-desc-accent">advanced healthcare for pets</span>{' '}
             and <span className="hero-desc-accent">happiness for pet parents</span>.
+            <h4 className='font-bold'>Best pet Clinc in Faridabad</h4>
           </p>
           <Link
             to="/contact-us"
@@ -44,12 +69,17 @@ const Hero = () => {
         </div>
         <div className="hero-visual-col">
           <div className="hero-img-wrap">
-            <img src={clinicFrontImg} alt="DD's MaxxPet Clinic - Happy pets" />
+            <img
+              src={sliderImages[currentIdx]}
+              alt="DD's MaxxPet Clinic"
+              className={isTransitioning ? 'fade-out' : 'fade-in'}
+            />
           </div>
         </div>
       </div>
     </section>
   );
 };
+
 
 export default Hero;

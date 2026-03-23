@@ -6,7 +6,6 @@ import ServicesPage from './pages/ServicesPage';
 import DoctorsPage from './pages/DoctorsPage';
 import LocationsPage from './pages/LocationsPage';
 import ContactUsPage from './pages/ContactUsPage';
-import SpecialtyPage from './pages/SpecialtyPage';
 import ServiceDetailsPage from './pages/ServiceDetailsPage';
 import './App.css';
 
@@ -23,7 +22,6 @@ function App() {
             <Route path="/locations" element={<LocationsPage />} />
             <Route path="/contact-us" element={<ContactUsPage />} />
             <Route path="/services/:slug" element={<ServiceDetailsPage />} />
-            <Route path="/specialties/:slug" element={<SpecialtyPage />} />
           </Routes>
         </main>
         <Footer />

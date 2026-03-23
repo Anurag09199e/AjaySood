@@ -1,6 +1,7 @@
-import { Star } from 'lucide-react';
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
-const testimonials = [
+const testimonialsData = [
   {
     text: "Dr. Gaur is absolutely wonderful with animals. My Golden Retriever Bruno had a complex orthopaedic surgery and the care we received was exceptional. He's back on his feet now — healthier than ever!",
     name: "Priya Sharma",
@@ -46,6 +47,46 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const [visibleCards, setVisibleCards] = useState(3);
+  const timerRef = useRef<number | null>(null);
+
+  const updateVisibleCards = useCallback(() => {
+    if (window.innerWidth < 640) {
+      setVisibleCards(1);
+    } else if (window.innerWidth < 1024) {
+      setVisibleCards(2);
+    } else {
+      setVisibleCards(3);
+    }
+  }, []);
+
+  useEffect(() => {
+    updateVisibleCards();
+    window.addEventListener('resize', updateVisibleCards);
+    return () => window.removeEventListener('resize', updateVisibleCards);
+  }, [updateVisibleCards]);
+
+  const maxIndex = Math.max(0, testimonialsData.length - visibleCards);
+
+  const nextSlide = useCallback(() => {
+    setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+  }, [maxIndex]);
+
+  const prevSlide = useCallback(() => {
+    setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+  }, [maxIndex]);
+
+  useEffect(() => {
+    if (!isPaused) {
+      timerRef.current = window.setInterval(nextSlide, 4000);
+    }
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [isPaused, nextSlide]);
+
   return (
     <section className="section testimonials-section">
       <div className="container">
@@ -59,30 +100,74 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="testimonials-grid">
-          {testimonials.map((t, idx) => (
-            <div
-              key={idx}
-              className={`testimonial-card animate-fade-in delay-${(idx % 3 + 1) * 100}`}
-            >
-              <div className="testimonial-stars">
-                {Array.from({ length: t.rating }).map((_, i) => (
-                  <Star key={i} size={15} fill="currentColor" />
-                ))}
-              </div>
-              <div className="testimonial-quote-icon">"</div>
-              <p className="testimonial-text">{t.text}</p>
-              <div className="testimonial-author">
-                <div className="testimonial-avatar-placeholder">
-                  {t.initials}
+        <div 
+          className="testimonials-carousel-viewport"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          <div 
+            className="testimonials-carousel-track"
+            style={{ 
+              transform: `translateX(-${(currentIndex * 100) / visibleCards}%)`,
+              width: `${(testimonialsData.length * 100) / visibleCards}%`
+            }}
+          >
+            {testimonialsData.map((t, idx) => (
+              <div
+                key={idx}
+                className="testimonial-slide"
+                style={{ width: `${100 / testimonialsData.length}%` }}
+              >
+                <div className="testimonial-card h-full">
+                  <div className="testimonial-stars">
+                    {Array.from({ length: t.rating }).map((_, i) => (
+                      <Star key={i} size={15} fill="currentColor" />
+                    ))}
+                  </div>
+                  <div className="testimonial-quote-icon">"</div>
+                  <p className="testimonial-text">{t.text}</p>
+                  <div className="testimonial-author mt-auto">
+                    <div className="testimonial-avatar-placeholder">
+                      {t.initials}
+                    </div>
+                    <div>
+                      <div className="testimonial-author-name">{t.name}</div>
+                      <div className="testimonial-author-pet">{t.pet}</div>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <div className="testimonial-author-name">{t.name}</div>
-                  <div className="testimonial-author-pet">{t.pet}</div>
-                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+
+        <div className="testimonials-carousel-nav">
+          <button 
+            className="carousel-nav-btn prev" 
+            onClick={prevSlide}
+            aria-label="Previous testimonial"
+          >
+            <ChevronLeft size={24} />
+          </button>
+          
+          <div className="carousel-dots">
+            {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
+              <button
+                key={idx}
+                className={`carousel-dot ${idx === currentIndex ? 'active' : ''}`}
+                onClick={() => setCurrentIndex(idx)}
+                aria-label={`Go to slide ${idx + 1}`}
+              />
+            ))}
+          </div>
+
+          <button 
+            className="carousel-nav-btn next" 
+            onClick={nextSlide}
+            aria-label="Next testimonial"
+          >
+            <ChevronRight size={24} />
+          </button>
         </div>
       </div>
     </section>

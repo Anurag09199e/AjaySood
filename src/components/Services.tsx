@@ -3,61 +3,61 @@ import { Link } from 'react-router-dom';
 
 const servicesList = [
   {
-    slug: "surgery",
-    category: "Medical",
-    title: "Surgery",
-    desc: "Expert surgical procedures with modern facilities and gentle, stress-free recovery protocols.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80"
+    slug: "parenting-counselling",
+    category: "Counselling",
+    title: "Parenting Counselling",
+    desc: "Expert guidance to help you build a loving bond with your new pet from day one.",
+    image: "src/assets/image/perent.jpeg"
   },
   {
     slug: "vaccination",
     category: "Preventative",
     title: "Vaccination",
     desc: "Complete vaccination programs to protect your pet from dangerous and life-threatening diseases.",
-    image: "https://images.unsplash.com/photo-1628009368231-7bb7cfcaeab6?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    slug: "pathology",
-    category: "Diagnostics",
-    title: "Pathological Laboratory",
-    desc: "Advanced diagnostics to detect and address health concerns before they become serious.",
-    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80"
+    image: "src/assets/image/vaccinations.jpg"
   },
   {
     slug: "grooming",
     category: "Grooming",
     title: "Pet Grooming",
     desc: "From soothing baths to nail trimming — we make sure your pet looks and feels their best.",
-    image: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80"
+    image: "src/assets/image/pet Grooming.jpeg"
   },
   {
     slug: "dentistry",
     category: "Medical",
     title: "Dentistry",
     desc: "Complete dental care to keep your pet's teeth strong, breath fresh, and gums healthy.",
-    image: "https://images.unsplash.com/photo-1596710104445-b4618e478eb0?auto=format&fit=crop&w=800&q=80"
+    image: "src/assets/image/Dental.webp"
   },
   {
-    slug: "wellness",
-    category: "Wellness",
-    title: "Pet Wellness",
-    desc: "Regular wellness check-ups to keep your furry friend energetic, active, and full of life.",
-    image: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80"
+    slug: "pet-store",
+    category: "Retail",
+    title: "Pet Store",
+    desc: "A wide range of premium pet foods, accessories, toys, and healthcare products to keep your pet happy and healthy.",
+    image: "src/assets/image/store.jpeg"
   },
   {
-    slug: "parenting-counselling",
-    category: "Counselling",
-    title: "Parenting Counselling",
-    desc: "Expert guidance to help you build a loving bond with your new pet from day one.",
-    image: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80"
+    slug: "surgery",
+    category: "Medical",
+    title: "Surgery",
+    desc: "Expert surgical procedures with modern facilities and gentle, stress-free recovery protocols.",
+    image: "src/assets/image/surgury.jpg"
   },
   {
-    slug: "nutrition-counselling",
-    category: "Counselling",
-    title: "Nutrition Counselling",
-    desc: "Customized dietary plans tailored to your pet's unique breed, age, and health needs.",
-    image: "https://images.unsplash.com/photo-1596710104445-b4618e478eb0?auto=format&fit=crop&w=600&q=80"
-  }
+    slug: "pathology",
+    category: "Diagnostics",
+    title: "Pathological Laboratory",
+    desc: "Advanced diagnostics to detect and address health concerns before they become serious.",
+    image: "src/assets/image/lab.jpeg"
+  },
+  {
+    slug: "skin-care",
+    category: "Dermatology",
+    title: "Skin Care",
+    desc: "Advanced skin care treatments for pets including allergy treatment, grooming support, and skin health management",
+    image: "src/assets/image/skincare.png"
+  },
 ];
 
 const Services = () => {
@@ -65,12 +65,10 @@ const Services = () => {
     <section id="services" className="section services-section">
       <div className="container">
         <div className="section-header animate-fade-in">
-          <div className="section-pill">
-            <span className="dot" /> Our Specialties
-          </div>
           <h2>Treatments & <span className="gradient-text">Services</span></h2>
           <p className="text-muted mt-4">Comprehensive veterinary care tailored to your pet's unique needs — from preventative medicine to advanced surgery.</p>
         </div>
+
 
         <div className="grid-4">
           {servicesList.map((srv, idx) => (
