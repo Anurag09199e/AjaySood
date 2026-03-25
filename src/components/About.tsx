@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-1
+
+import doctorImg from "../image/doctor.jpeg";
+
 const About = () => {
   return (
     <section id="about" className="section bg-white">
@@ -11,7 +13,7 @@ const About = () => {
           <div className="about-img-stack animate-left">
             <div className="about-img-primary" style={{ width: "500px", height: "500px", objectFit: "cover", marginLeft: "50px" }}>
               <img
-                src="src/image/doctor.jpeg"
+                src={doctorImg}
                 alt="Dr. Dheeraj Gaur"
 
               />
