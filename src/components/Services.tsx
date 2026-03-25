@@ -7,56 +7,56 @@ const servicesList = [
     category: "Counselling",
     title: "Parenting Counselling",
     desc: "Expert guidance to help you build a loving bond with your new pet from day one.",
-    image: "src/assets/image/perent.jpeg"
+    image: "src/image/perent.jpeg"
   },
   {
     slug: "vaccination",
     category: "Preventative",
     title: "Vaccination",
     desc: "Complete vaccination programs to protect your pet from dangerous and life-threatening diseases.",
-    image: "src/assets/image/vaccinations.jpg"
+    image: "src/image/vaccinations.jpg"
   },
   {
     slug: "grooming",
     category: "Grooming",
     title: "Pet Grooming",
     desc: "From soothing baths to nail trimming — we make sure your pet looks and feels their best.",
-    image: "src/assets/image/pet Grooming.jpeg"
+    image: "src/image/pet Grooming.jpeg"
   },
   {
     slug: "dentistry",
     category: "Medical",
     title: "Dentistry",
     desc: "Complete dental care to keep your pet's teeth strong, breath fresh, and gums healthy.",
-    image: "src/assets/image/Dental.webp"
+    image: "src/image/Dental.webp"
   },
   {
     slug: "pet-store",
     category: "Retail",
     title: "Pet Store",
     desc: "A wide range of premium pet foods, accessories, toys, and healthcare products to keep your pet happy and healthy.",
-    image: "src/assets/image/store.jpeg"
+    image: "src/image/store.jpeg"
   },
   {
     slug: "surgery",
     category: "Medical",
     title: "Surgery",
     desc: "Expert surgical procedures with modern facilities and gentle, stress-free recovery protocols.",
-    image: "src/assets/image/surgury.jpg"
+    image: "src/image/surgury.jpg"
   },
   {
     slug: "pathology",
     category: "Diagnostics",
     title: "Pathological Laboratory",
     desc: "Advanced diagnostics to detect and address health concerns before they become serious.",
-    image: "src/assets/image/lab.jpeg"
+    image: "src/image/lab.jpeg"
   },
   {
     slug: "skin-care",
     category: "Dermatology",
     title: "Skin Care",
     desc: "Advanced skin care treatments for pets including allergy treatment, grooming support, and skin health management",
-    image: "src/assets/image/skincare.png"
+    image: "src/image/skincare.png"
   },
 ];
 
