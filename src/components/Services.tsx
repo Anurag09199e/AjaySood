@@ -1,62 +1,72 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+// Import all images for services
+import parentingImg from "../image/perent.jpeg";
+import vaccinationImg from "../image/vaccinations.jpg";
+import groomingImg from "../image/pet-grooming.jpeg";
+import dentalImg from "../image/Dental.webp";
+import storeImg from "../image/store.jpeg";
+import surgeryImg from "../image/surgury.jpg";
+import pathologyImg from "../image/lab.jpeg";
+import skinCareImg from "../image/skincare.png";
+
 const servicesList = [
   {
     slug: "parenting-counselling",
     category: "Counselling",
     title: "Parenting Counselling",
     desc: "Expert guidance to help you build a loving bond with your new pet from day one.",
-    image: "src/assets/image/perent.jpeg"
+    image: parentingImg
   },
   {
     slug: "vaccination",
     category: "Preventative",
     title: "Vaccination",
     desc: "Complete vaccination programs to protect your pet from dangerous and life-threatening diseases.",
-    image: "src/assets/image/vaccinations.jpg"
+    image: vaccinationImg
   },
   {
     slug: "grooming",
     category: "Grooming",
     title: "Pet Grooming",
     desc: "From soothing baths to nail trimming — we make sure your pet looks and feels their best.",
-    image: "src/assets/image/pet Grooming.jpeg"
+    image: groomingImg
   },
   {
     slug: "dentistry",
     category: "Medical",
     title: "Dentistry",
     desc: "Complete dental care to keep your pet's teeth strong, breath fresh, and gums healthy.",
-    image: "src/assets/image/Dental.webp"
+    image: dentalImg
   },
   {
     slug: "pet-store",
     category: "Retail",
     title: "Pet Store",
     desc: "A wide range of premium pet foods, accessories, toys, and healthcare products to keep your pet happy and healthy.",
-    image: "src/assets/image/store.jpeg"
+    image: storeImg
   },
   {
     slug: "surgery",
     category: "Medical",
     title: "Surgery",
     desc: "Expert surgical procedures with modern facilities and gentle, stress-free recovery protocols.",
-    image: "src/assets/image/surgury.jpg"
+    image: surgeryImg
   },
   {
     slug: "pathology",
     category: "Diagnostics",
     title: "Pathological Laboratory",
     desc: "Advanced diagnostics to detect and address health concerns before they become serious.",
-    image: "src/assets/image/lab.jpeg"
+    image: pathologyImg
   },
   {
     slug: "skin-care",
     category: "Dermatology",
     title: "Skin Care",
     desc: "Advanced skin care treatments for pets including allergy treatment, grooming support, and skin health management",
-    image: "src/assets/image/skincare.png"
+    image: skinCareImg
   },
 ];
 

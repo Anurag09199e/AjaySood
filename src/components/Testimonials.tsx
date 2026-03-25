@@ -5,52 +5,62 @@ const testimonialsData = [
   {
     text: "Dr. Gaur is absolutely wonderful with animals. My Golden Retriever Bruno had a complex orthopaedic surgery and the care we received was exceptional. He's back on his feet now — healthier than ever!",
     name: "Priya Sharma",
-    pet: "Owner of Bruno (Golden Retriever)",
-    initials: "PS",
+    pet: "Bruno (Golden Retriever)",
+    image: "/src/image/bruno.jpg",
     rating: 5
   },
   {
     text: "The home grooming service is a game changer! My nervous Persian cat hates clinics, but she was perfectly calm with the DD's MaxxPet Clinic team at home. Professional, punctual, and so gentle.",
     name: "Rahul Mehta",
-    pet: "Owner of Mittens (Persian Cat)",
-    initials: "RM",
+    pet: "Mittens (Persian Cat)",
+    image: "/src/image/mittens.jpg",
     rating: 5
   },
   {
     text: "We've been coming to DD's MaxxPet Clinic for years. Our family's pets have always been treated here. The trust and continuity of care is unmatched.",
     name: "Sunita Kapoor",
-    pet: "Regular client",
-    initials: "SK",
+    pet: "Bella (Regular Client)",
+    image: "/src/image/bella.jpg",
     rating: 5
   },
   {
     text: "Quick, professional, and so compassionate. When my Labrador had an emergency, DD's MaxxPet Clinic was available immediately. I can't thank Dr. Gaur and his team enough.",
     name: "Arjun Nair",
-    pet: "Owner of Max (Labrador)",
-    initials: "AN",
+    pet: "Max (Labrador)",
+    image: "/src/image/max.jpg",
     rating: 5
   },
   {
     text: "The nutrition counselling completely transformed my dog's health. She lost weight, her coat improved, and she's so much more energetic now. Science-backed advice that actually works.",
     name: "Deepika Verma",
-    pet: "Owner of Coco (Beagle Mix)",
-    initials: "DV",
+    pet: "Coco (Beagle Mix)",
+    image: "/src/image/coco.jpg",
     rating: 5
   },
   {
     text: "DD's MaxxPet Clinic is the only place I trust for my two cats' vaccinations. The team is knowledgeable, the facility is clean, and they always explain everything clearly. 10/10 every time.",
     name: "Kiran Bhat",
-    pet: "Owner of Luna & Oreo",
-    initials: "KB",
+    pet: "Luna & Oreo",
+    image: "/src/image/cats.jpg",
     rating: 5
   }
 ];
 
+
 const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(3); // Start at index 3 (first real item)
   const [isPaused, setIsPaused] = useState(false);
   const [visibleCards, setVisibleCards] = useState(3);
+  const [isTransitioning, setIsTransitioning] = useState(true);
   const timerRef = useRef<number | null>(null);
+  
+  // Clone data for infinite loop: [last 3] [real items] [first 3]
+  // Using 3 as a safe buffer for all screen sizes (max visibleCards is 3)
+  const extendedData = [
+    ...testimonialsData.slice(-3),
+    ...testimonialsData,
+    ...testimonialsData.slice(0, 3)
+  ];
 
   const updateVisibleCards = useCallback(() => {
     if (window.innerWidth < 640) {
@@ -68,15 +78,40 @@ const Testimonials = () => {
     return () => window.removeEventListener('resize', updateVisibleCards);
   }, [updateVisibleCards]);
 
-  const maxIndex = Math.max(0, testimonialsData.length - visibleCards);
-
   const nextSlide = useCallback(() => {
-    setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
-  }, [maxIndex]);
+    if (!isTransitioning) return;
+    setCurrentIndex((prev) => prev + 1);
+  }, [isTransitioning]);
 
   const prevSlide = useCallback(() => {
-    setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
-  }, [maxIndex]);
+    if (!isTransitioning) return;
+    setCurrentIndex((prev) => prev - 1);
+  }, [isTransitioning]);
+
+  // Handle seamless loop jumps after transition finishes
+  const handleTransitionEnd = () => {
+    // If we reached the end clones
+    if (currentIndex >= testimonialsData.length + 3) {
+      setIsTransitioning(false);
+      setCurrentIndex(3);
+    }
+    
+    // If we reached the start clones
+    if (currentIndex <= 2) {
+      setIsTransitioning(false);
+      setCurrentIndex(testimonialsData.length + 2);
+    }
+  };
+
+  // Re-enable transition after jump in next tick
+  useEffect(() => {
+    if (!isTransitioning) {
+      const raf = requestAnimationFrame(() => {
+        setIsTransitioning(true);
+      });
+      return () => cancelAnimationFrame(raf);
+    }
+  }, [isTransitioning]);
 
   useEffect(() => {
     if (!isPaused) {
@@ -86,6 +121,9 @@ const Testimonials = () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
   }, [isPaused, nextSlide]);
+
+  // Calculate real index for dots
+  const realIndex = (currentIndex - 3 + testimonialsData.length) % testimonialsData.length;
 
   return (
     <section className="section testimonials-section">
@@ -107,32 +145,49 @@ const Testimonials = () => {
         >
           <div 
             className="testimonials-carousel-track"
+            onTransitionEnd={handleTransitionEnd}
             style={{ 
-              transform: `translateX(-${(currentIndex * 100) / visibleCards}%)`,
-              width: `${(testimonialsData.length * 100) / visibleCards}%`
+              transform: `translateX(-${(currentIndex * 100) / extendedData.length}%)`,
+              width: `${(extendedData.length * 100) / visibleCards}%`,
+              transition: isTransitioning ? 'transform 0.6s ease-in-out' : 'none'
             }}
           >
-            {testimonialsData.map((t, idx) => (
+            {extendedData.map((t, idx) => (
               <div
                 key={idx}
                 className="testimonial-slide"
-                style={{ width: `${100 / testimonialsData.length}%` }}
+                style={{ width: `${100 / extendedData.length}%` }}
               >
                 <div className="testimonial-card h-full">
-                  <div className="testimonial-stars">
-                    {Array.from({ length: t.rating }).map((_, i) => (
-                      <Star key={i} size={15} fill="currentColor" />
-                    ))}
-                  </div>
-                  <div className="testimonial-quote-icon">"</div>
-                  <p className="testimonial-text">{t.text}</p>
-                  <div className="testimonial-author mt-auto">
-                    <div className="testimonial-avatar-placeholder">
-                      {t.initials}
+                  <div className="testimonial-card-header">
+                    <div className="testimonial-stars">
+                      {[...Array(5)].map((_, i) => (
+                        <Star 
+                          key={i} 
+                          size={16} 
+                          fill={i < t.rating ? "var(--accent)" : "none"} 
+                          stroke={i < t.rating ? "var(--accent)" : "rgba(255,255,255,0.2)"}
+                        />
+                      ))}
                     </div>
-                    <div>
-                      <div className="testimonial-author-name">{t.name}</div>
-                      <div className="testimonial-author-pet">{t.pet}</div>
+                    <div className="testimonial-quote-icon">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 11L8 17H5L7 11V7H11V11H10ZM18 11L16 17H13L15 11V7H19V11H18Z" fill="var(--primary-light)" fillOpacity="0.3"/>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  <p className="testimonial-text">{t.text}</p>
+                  
+                  <div className="testimonial-author mt-auto">
+                    <div className="testimonial-image-container">
+                      <img src={t.image} alt={t.pet} className="testimonial-image" onError={(e) => {
+                        (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${t.name}&background=004d4d&color=fff`;
+                      }} />
+                    </div>
+                    <div className="testimonial-info">
+                      <h4 className="testimonial-author-name">{t.name}</h4>
+                      <p className="testimonial-author-pet">{t.pet}</p>
                     </div>
                   </div>
                 </div>
@@ -141,7 +196,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className="testimonials-carousel-nav">
+        <div className="testimonials-carousel-controls">
           <button 
             className="carousel-nav-btn prev" 
             onClick={prevSlide}
@@ -151,11 +206,14 @@ const Testimonials = () => {
           </button>
           
           <div className="carousel-dots">
-            {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
+            {testimonialsData.map((_, idx) => (
               <button
                 key={idx}
-                className={`carousel-dot ${idx === currentIndex ? 'active' : ''}`}
-                onClick={() => setCurrentIndex(idx)}
+                className={`carousel-dot ${idx === realIndex ? 'active' : ''}`}
+                onClick={() => {
+                  setIsTransitioning(true);
+                  setCurrentIndex(idx + 3);
+                }}
                 aria-label={`Go to slide ${idx + 1}`}
               />
             ))}
@@ -169,9 +227,11 @@ const Testimonials = () => {
             <ChevronRight size={24} />
           </button>
         </div>
+
       </div>
     </section>
   );
 };
+
 
 export default Testimonials;

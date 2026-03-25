@@ -1,28 +1,24 @@
 import { useState, useEffect } from 'react';
 import { ArrowRight, Heart, Stethoscope, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import clinicFrontImg from '../assets/clinic-front.webp';
+import clinicFrontImg from '../image/clinic-front.webp';
+import clinic1Img from '../image/clinic-1.jpeg';
+import clinic2Img from '../image/clinic-2.jpeg';
 
 // Slider images
 const sliderImages = [
   clinicFrontImg,
-  'src/assets/clinic-front.webp',
-  'src/assets/clinic.jpeg',
-
+  clinic1Img,
+  clinic2Img,
 ];
 
 const Hero = () => {
   const [currentIdx, setCurrentIdx] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setIsTransitioning(true);
-      setTimeout(() => {
-        setCurrentIdx((prev) => (prev + 1) % sliderImages.length);
-        setIsTransitioning(false);
-      }, 500); // Wait for fade out
-    }, 10000);
+      setCurrentIdx((prev: number) => (prev + 1) % sliderImages.length);
+    }, 6000);
 
     return () => clearInterval(timer);
   }, []);
@@ -69,11 +65,24 @@ const Hero = () => {
         </div>
         <div className="hero-visual-col">
           <div className="hero-img-wrap">
-            <img
-              src={sliderImages[currentIdx]}
-              alt="DD's MaxxPet Clinic"
-              className={isTransitioning ? 'fade-out' : 'fade-in'}
-            />
+            {sliderImages.map((img, idx) => (
+              <div
+                key={idx}
+                className={`hero-slide ${idx === currentIdx ? 'active' : ''}`}
+                aria-hidden={idx !== currentIdx}
+              >
+                <img
+                  src={img}
+                  alt=""
+                  className="hero-slide-bg"
+                />
+                <img
+                  src={img}
+                  alt="DD's MaxxPet Clinic"
+                  className="hero-slide-main"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
