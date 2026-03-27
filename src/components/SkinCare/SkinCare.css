@@ -1,0 +1,22 @@
+/* SkinCare specific CSS */
+
+.skincare-plans-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 992px) {
+  .skincare-plans-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skincare-plans-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
