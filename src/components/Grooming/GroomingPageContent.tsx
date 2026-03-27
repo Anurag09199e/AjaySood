@@ -3,8 +3,8 @@ import VaccinationSubHero from '../Vaccination/VaccinationSubHero';
 import PricingCard from '../Shared/PricingCard';
 import CTABanner from '../CTABanner';
 import { Scissors, Sparkles, Heart } from 'lucide-react';
-import dogGroomingImg from '../../image/dog_grooming_service.png';
-import catGroomingImg from '../../image/cat_grooming_service.png';
+import dogGroomingImg from '../../image/dog_grooming_service.jpg';
+import catGroomingImg from '../../image/cat_grooming_service.jpg';
 import '../../pages/GroomingPage.css';
 import './Grooming.css';
 
