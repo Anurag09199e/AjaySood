@@ -1,0 +1,22 @@
+/* Grooming specific CSS */
+
+.grooming-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 992px) {
+  .grooming-plans-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .grooming-plans-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

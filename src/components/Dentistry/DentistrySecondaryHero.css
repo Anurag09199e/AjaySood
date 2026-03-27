@@ -1,0 +1,143 @@
+.dsh-section {
+  position: relative;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 4rem 0;
+}
+
+.dsh-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.dsh-bg-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0.85) 20%, transparent 60%);
+}
+
+.dsh-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.dsh-content-wrapper {
+  max-width: 60%;
+}
+
+@media (max-width: 992px) {
+  .dsh-bg {
+    width: 100%;
+    opacity: 0.15;
+    /* make it a very light watermark on mobile */
+  }
+
+  .dsh-bg-gradient {
+    background: #fff;
+    /* fallback to white mostly */
+    opacity: 0.85;
+  }
+
+  .dsh-content-wrapper {
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.dsh-title {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.dsh-title-green {
+  color: #349181;
+}
+
+.dsh-title-dark {
+  color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+  .dsh-title {
+    font-size: 2.2rem;
+  }
+}
+
+.dsh-btn {
+  background-color: #349181;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-block;
+  margin-bottom: 3.5rem;
+  transition: all 0.3s ease;
+}
+
+.dsh-btn:hover {
+  background-color: #2e7c73;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.dsh-feature-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .dsh-feature-cards {
+    justify-content: center;
+  }
+}
+
+.dsh-card {
+  background-color: #FEF7F9;
+  border-radius: 14px;
+  padding: 1.5rem 1rem;
+  width: 140px;
+  min-height: 160px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  transition: transform 0.3s;
+}
+
+.dsh-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(52, 145, 129, 0.1);
+}
+
+.dsh-card-icon {
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.dsh-card p {
+  color: #4a4a4a;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 500;
+}
