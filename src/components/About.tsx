@@ -76,7 +76,7 @@ const About = () => {
             </div>
 
             <div className="mt-8">
-              <Link to="/doctors" className="btn btn-primary">
+              <Link to="/contact-us" className="btn btn-primary">
                 Meet Dr. Dheeraj <ArrowRight size={17} />
               </Link>
             </div>

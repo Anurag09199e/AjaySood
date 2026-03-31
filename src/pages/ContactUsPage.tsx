@@ -1,6 +1,7 @@
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, MessageCircle } from 'lucide-react';
 import { FormEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
+import doctorImg from "../image/pets-perent-3.png";
 
 const ContactUsPage = () => {
   const [formData, setFormData] = useState({
@@ -35,8 +36,8 @@ const ContactUsPage = () => {
       {/* Hero */}
       <section className="inner-page-hero" style={{
         backgroundImage: `
-          linear-gradient(135deg, rgba(6,44,36,0.80) 0%, rgba(13,89,73,0.70) 50%, rgba(6,44,36,0.88) 100%),
-          url('https://images.unsplash.com/photo-1628009368231-7bb7cfcaeab6?auto=format&fit=crop&w=1920&q=80')
+          linear-gradient(135deg, rgba(129, 167, 172, 0.82) 0%, rgba(13,89,73,0.75) 50%, rgba(61, 74, 71, 0.85) 100%),
+          url(${doctorImg})
         `,
       }}>
         <div className="inner-hero-pattern" />

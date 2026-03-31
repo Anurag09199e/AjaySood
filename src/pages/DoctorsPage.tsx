@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import DoctorProfile from '../components/DoctorProfile';
 import About from '../components/About';
 import CTABanner from '../components/CTABanner';
+import doctorImg from "../image/pets-perent-2.png";
 
 const DoctorsPage = () => {
   return (
@@ -10,8 +11,8 @@ const DoctorsPage = () => {
       {/* Page Hero */}
       <section className="inner-page-hero" style={{
         backgroundImage: `
-          linear-gradient(135deg, rgba(6,44,36,0.78) 0%, rgba(13,100,80,0.72) 50%, rgba(6,44,36,0.82) 100%),
-          url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1920&q=80')
+          linear-gradient(135deg, rgba(129, 167, 172, 0.82) 0%, rgba(13,89,73,0.75) 50%, rgba(61, 74, 71, 0.85) 100%),
+          url(${doctorImg})
         `,
       }}>
         <div className="inner-hero-pattern" />

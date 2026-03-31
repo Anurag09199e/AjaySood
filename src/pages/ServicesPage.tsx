@@ -2,6 +2,7 @@ import { Stethoscope } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Services from '../components/Services';
 import CTABanner from '../components/CTABanner';
+import doctorImg from "../image/pets-perent-1.png";
 
 const ServicesPage = () => {
   return (
@@ -9,8 +10,8 @@ const ServicesPage = () => {
       {/* Page Hero */}
       <section className="inner-page-hero" style={{
         backgroundImage: `
-          linear-gradient(135deg, rgba(6,44,36,0.82) 0%, rgba(13,89,73,0.75) 50%, rgba(6,44,36,0.85) 100%),
-          url('https://images.unsplash.com/photo-1628009368231-7bb7cfcaeab6?auto=format&fit=crop&w=1920&q=80')
+          linear-gradient(135deg, rgba(129, 167, 172, 0.82) 0%, rgba(13,89,73,0.75) 50%, rgba(61, 74, 71, 0.85) 100%),
+          url(${doctorImg})
         `,
       }}>
         {/* Decorative pattern overlay */}
