@@ -17,11 +17,11 @@ const GroomingSecondaryHero = () => {
       <div className="container grsh-container">
         <div className="grsh-content-wrapper animate-fade-in">
 
-          <h2 className="grsh-title">
-            <span className="grsh-title-pink">Professional Grooming for</span><br />
-            <span className="grsh-title-dark">Happy & Healthy Pets in Faridabad</span>
-          </h2>
-          <p className='text-bold'>Our expert groomers provide a gentle and stress-free experience, ensuring your pet looks and feels their absolute best.</p><br />
+          <h1 className="grsh-title">
+            <span className="grsh-title-pink">Pet Grooming in Faridabad is More Than Just Styling</span>
+          </h1>
+
+          <p className='text-bold'>At DD's MaxxPet Clinic, we believe that grooming is an essential part of your pet's overall health and well-being. Our professional grooming services go beyond simple haircuts — we provide comprehensive care that keeps your pet clean, comfortable, and happy.</p><br />
           <Link to="/contact-us" className="btn grsh-btn">
             Book Grooming Service
           </Link>

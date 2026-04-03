@@ -1,7 +1,17 @@
 import PathologyPageContent from '../components/Pathology/PathologyPageContent';
+import SEO from '../components/Shared/SEO';
 
 const PathologyPage = () => {
-  return <PathologyPageContent />;
+  return (
+    <>
+      <SEO 
+        title="Best Pet Pathological Lab in Faridabad | Fast & Accurate Results" 
+        description="Comprehensive in-house pet diagnostic services in Faridabad. DD's MaxxPet Clinic offers blood tests and pathological exams with rapid results."
+        canonical="/pathology"
+      />
+      <PathologyPageContent />
+    </>
+  );
 };
 
 export default PathologyPage;

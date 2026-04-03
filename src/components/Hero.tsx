@@ -39,7 +39,7 @@ const Hero = () => {
           </h1>
           <p className="hero-desc">
             <strong>DD's MaxxPet Clinic</strong> — fostering compassion and advanced healthcare for pets.<span className="hero-desc-sub">
-              Looking for the<span className="hero-desc-accent">best pet clinic in Faridabad</span> ? At DD's MaxxPet Clinic, we provide exceptional veterinary care with a focus on compassion, safety, and advanced treatment. From routine check-ups to specialized care, we ensure your pets stay healthy, happy, and protected at every stage of their life.
+              Looking for the <span className="hero-desc-accent">Best Pet Clinic in Faridabad</span> ? At DD's MaxxPet Clinic, we provide exceptional veterinary care with a focus on compassion, safety, and advanced treatment. From routine check-ups to specialized care, we ensure your pets stay healthy, happy, and protected at every stage of their life.
             </span>
           </p>
 

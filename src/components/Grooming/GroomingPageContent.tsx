@@ -58,8 +58,8 @@ const GroomingPageContent = () => {
       <GroomingSecondaryHero />
 
       <VaccinationSubHero
-        titleLine1="The Best Choice for"
-        titleLine2="Dog Grooming"
+        titleLine1="Best Dogs Grooming "
+        titleLine2="in Faridabad"
         description="Our dog grooming service includes a full range of treatments to keep your pup looking and feeling great. From professional haircuts and breed-specific styling to gentle baths, we handle your pet with the utmost care."
         image={dogGroomingImg}
         imageLeft={true}
@@ -80,8 +80,8 @@ const GroomingPageContent = () => {
       </div>
 
       <VaccinationSubHero
-        titleLine1="Safe and Stress-Free"
-        titleLine2="Cat Grooming"
+        titleLine1="Best Cats Grooming"
+        titleLine2="in Faridabad"
         description="Grooming is essential for feline health. Our cat grooming service features stress-free handling and gentle techniques, ensuring your cat leaves our salon feeling relaxed, revitalized, and perfectly clean."
         image={catGroomingImg}
         imageLeft={false}

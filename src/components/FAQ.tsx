@@ -57,7 +57,7 @@ const FAQ = () => {
                 onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
                 aria-expanded={openIdx === idx}
               >
-                <span className="faq-question">{faq.q}</span>
+                <h4 className="faq-question">{faq.q}</h4>
                 <span className="faq-icon">
                   <ChevronDown size={18} />
                 </span>

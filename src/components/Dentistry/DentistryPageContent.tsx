@@ -58,8 +58,8 @@ const DentistryPageContent = () => {
       <DentistrySecondaryHero />
 
       <VaccinationSubHero
-        titleLine1="Dog Dentistry"
-        titleLine2=""
+        titleLine1="Dogs Dentistry "
+        titleLine2="in Faridabad"
         description="Bad breath, plaque build-up, and gum disease are common in dogs. Our professional dental cleanings, ultrasonic scaling, and safe extractions keep your dog's teeth strong and pain-free."
         image={dentalDogImg}
         imageLeft={true}
@@ -80,8 +80,8 @@ const DentistryPageContent = () => {
       </div>
 
       <VaccinationSubHero
-        titleLine1="Cat Dentistry"
-        titleLine2=""
+        titleLine1="Cats Dentistry"
+        titleLine2="in Faridabad"
         description="Cats are prone to resorptive lesions and gingivitis that can go unnoticed. Our gentle feline dental protocols include thorough exams, safe anaesthesia-based cleanings, and pain-free extractions to keep your cat's oral health in top condition."
         image={dentalCatImg}
         imageLeft={false}

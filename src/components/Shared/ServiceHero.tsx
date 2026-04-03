@@ -10,11 +10,12 @@ export interface FeatureCard {
 interface ServiceHeroProps {
   titleLine1: string;
   titleLine2: string;
+  description?: string;
   backgroundImage: string;
   features: FeatureCard[];
 }
 
-const ServiceHero = ({ titleLine1, titleLine2, backgroundImage, features }: ServiceHeroProps) => {
+const ServiceHero = ({ titleLine1, titleLine2, description, backgroundImage, features }: ServiceHeroProps) => {
   return (
     <section className="service-hero-section">
       <div 
@@ -27,10 +28,16 @@ const ServiceHero = ({ titleLine1, titleLine2, backgroundImage, features }: Serv
       <div className="container service-hero-container">
         <div className="service-hero-content-wrapper animate-fade-in">
           
-          <h2 className="service-hero-title">
+          <h1 className="service-hero-title">
             <span className="service-hero-title-pink">{titleLine1}</span><br />
             <span className="service-hero-title-dark">{titleLine2}</span>
-          </h2>
+          </h1>
+
+          {description && (
+            <p className="service-hero-description">
+              {description}
+            </p>
+          )}
 
           <Link to="/contact-us" className="btn service-hero-btn">
             Book Appointment

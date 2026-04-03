@@ -17,10 +17,9 @@ const VaccinationSecondaryHero = () => {
       <div className="container vsh-container">
         <div className="vsh-content-wrapper animate-fade-in">
 
-          <h2 className="vsh-title">
+          <h1 className="vsh-title">
             <span className="vsh-title-pink">Pets vaccination in Faridabad</span>
-
-          </h2>
+          </h1>
           <p className='text-bold'>As a best pets vaccination clinic in Faridabad, our goal is to provide preventive care that ensures your pets stay protected throughout their lives</p><br />
           <Link to="/contact-us" className="btn vsh-btn">
             Book Appointment

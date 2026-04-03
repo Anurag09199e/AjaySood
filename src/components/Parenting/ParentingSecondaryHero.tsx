@@ -16,9 +16,9 @@ const ParentingSecondaryHero = () => {
       <div className="container prsh-container">
         <div className="prsh-content-wrapper animate-fade-in">
 
-          <h2 className="prsh-title">
-            <span className="prsh-title-green">Pets parenting counselling in Faridabad</span>
-          </h2>
+          <h1 className="prsh-title">
+            <span className="prsh-title-green">Pets Parenting Counselling in Faridabad</span>
+          </h1>
           <p className='text-bold'>Expert guidance to help you build a loving, structured bond with your pet — from potty training to behavioral counselling and socialization</p><br />
           <Link to="/contact-us" className="btn prsh-btn">
             Book Appointment

@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
                     {pt.icon}
                   </div>
                   <div>
-                    <h5>{pt.title}</h5>
+                    <h3>{pt.title}</h3>
                     <p>{pt.desc}</p>
                   </div>
                 </div>
@@ -72,7 +72,7 @@ const WhyChooseUs = () => {
                 <Award size={24} />
               </div>
               <div>
-                <h6>Lifetime Achievement Award</h6>
+                <h4>Lifetime Achievement Award</h4>
                 <p>Delhi Veterinary Association, 2016</p>
               </div>
             </div>

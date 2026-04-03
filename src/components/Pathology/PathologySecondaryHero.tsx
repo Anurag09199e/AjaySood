@@ -16,9 +16,9 @@ const PathologySecondaryHero = () => {
       <div className="container psh-container">
         <div className="psh-content-wrapper animate-fade-in">
 
-          <h2 className="psh-title">
-            <span className="psh-title-green">Pets pathological laboratory in Faridabad</span>
-          </h2>
+          <h1 className="psh-title">
+            <span className="psh-title-green">Pets Pathological Laboratory in Faridabad</span>
+          </h1>
           <p className='text-bold'>Advanced in-house diagnostics for fast, accurate results — helping us detect and treat health issues before they become serious</p><br />
           <Link to="/contact-us" className="btn psh-btn">
             Book Appointment

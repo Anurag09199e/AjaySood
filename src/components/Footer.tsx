@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Twitter, Youtube, MapPin, Phone, Clock } from 'lucide-react';
+import { Instagram, Facebook, MapPin, Phone, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import logoImg from '../assets/maxxpet-logo.JPG';
 
@@ -22,12 +22,6 @@ const Footer = () => {
               </a>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon" aria-label="Facebook">
                 <Facebook size={18} />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon" aria-label="Twitter">
-                <Twitter size={18} />
-              </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon" aria-label="YouTube">
-                <Youtube size={18} />
               </a>
             </div>
           </div>
