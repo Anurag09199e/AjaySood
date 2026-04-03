@@ -17,9 +17,9 @@ const DentistrySecondaryHero = () => {
       <div className="container dsh-container">
         <div className="dsh-content-wrapper animate-fade-in">
 
-          <h2 className="dsh-title">
+          <h1 className="dsh-title">
             <span className="dsh-title-green">Pets dental clinic in Faridabad</span>
-          </h2>
+          </h1>
           <p className='text-bold'>As a leading pets dental clinic in Faridabad, we provide complete oral care to keep your pet's teeth strong, gums healthy, and breath fresh</p><br />
           <Link to="/contact-us" className="btn dsh-btn">
             Book Appointment

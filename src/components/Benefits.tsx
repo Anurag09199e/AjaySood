@@ -55,7 +55,7 @@ const Benefits = () => {
               <div className="benefit-icon-v2">
                 {bnf.icon}
               </div>
-              <h4 className="benefit-title-v2">{bnf.title}</h4>
+              <h3 className="benefit-title-v2">{bnf.title}</h3>
               <p className="benefit-desc-v2">{bnf.desc}</p>
             </div>
           ))}

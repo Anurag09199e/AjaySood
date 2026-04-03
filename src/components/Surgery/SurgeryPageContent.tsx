@@ -35,8 +35,9 @@ const SurgeryPageContent = () => {
     <div className="grooming-page-root">
 
       <ServiceHero
-        titleLine1="Advanced Pet"
-        titleLine2="Surgery Care"
+        titleLine1="Advanced Pet Surgery Care"
+        titleLine2=""
+        description="Expert surgical procedures with modern facilities and gentle recovery protocols."
         backgroundImage={surgeryHeroImg}
         features={[
           { icon: <Activity size={22} color="#1a1a1a" />, title: "Modern Operation<br/>Theatres" },
@@ -47,7 +48,7 @@ const SurgeryPageContent = () => {
 
       <ServiceSubHero
         titleLine1="Expert Pet Surgery Clinic"
-        titleLine2="State-of-the-Art Operations"
+        titleLine2="in faridabad"
         description="oful. sncy interventions, trust our experienced surgeons."
         image={surgeryHeroImg}
         imageLeft={true}
@@ -69,8 +70,8 @@ const SurgeryPageContent = () => {
       </div>
 
       <ServiceSubHero
-        titleLine1="Post-Operative Precision"
-        titleLine2="Painless Healing & Recovery"
+        titleLine1="Best cats surgery"
+        titleLine2="in faridabad"
         description="pled with scheduled pain remedies, ensuring maximum comfort once your pet comes back home to rest."
         image={surgeryAddImg}
         imageLeft={false}

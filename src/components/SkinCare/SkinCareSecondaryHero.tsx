@@ -17,10 +17,11 @@ const SkinCareSecondaryHero = () => {
       <div className="container scsh-container">
         <div className="scsh-content-wrapper animate-fade-in">
 
-          <h2 className="scsh-title">
-            <span className="scsh-title-pink">Healthy Skin, Happy Pets with</span><br />
-            <span className="scsh-title-dark">Professional Pet Skin Care Services</span>
-          </h2>
+          <h1 className="scsh-title">
+            <span className="scsh-title-pink">Pets Skin Care</span>
+            <span className="scsh-title-dark"> in Faridabad</span>
+          </h1>
+          <p className='text-bold'>Skin problems are common in pets, but they can cause significant discomfort and affect their quality of life. At DD's MaxxPet Clinic, we provide comprehensive dermatological care to diagnose and treat skin conditions effectively.</p><br />
           <Link to="/contact-us" className="btn scsh-btn">
             Book Skin Care Service
           </Link>

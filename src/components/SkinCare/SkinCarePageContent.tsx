@@ -58,7 +58,7 @@ const SkinCarePageContent = () => {
       <SkinCareSecondaryHero />
 
       <VaccinationSubHero
-        titleLine1="Complete Protection via"
+        titleLine1="Complete Protection"
         titleLine2="Dog Skin Care"
         description="Skin conditions in dogs can range from allergies and infections to tick infestations and coat deterioration. Our expert dermatology team provides targeted treatments to restore your dog's skin health and comfort."
         image={skincareDogImg}
@@ -80,8 +80,8 @@ const SkinCarePageContent = () => {
       </div>
 
       <VaccinationSubHero
-        titleLine1="Advanced Dermatology "
-        titleLine2="Cat Skin Care"
+        titleLine1="Cats Skin Care"
+        titleLine2="in Faridabad"
         description="Cats are prone to sensitive skin, fungal infections, and stress-induced dermatitis. Our gentle, specialized feline skin care protocols ensure your cat's coat stays lustrous and irritation-free throughout all life stages."
         image={skincareCatImg}
         imageLeft={false}
