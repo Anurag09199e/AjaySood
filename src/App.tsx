@@ -14,7 +14,9 @@ import VaccinationPage from './pages/VaccinationPage';
 import PathologyPage from './pages/PathologyPage';
 import ParentingPage from './pages/ParentingPage';
 import GroomingPage from './pages/GroomingPage';
+import ContactFloatingButton from './components/ContactFloatingButton';
 import './App.css';
+
 
 function App() {
   return (
@@ -39,7 +41,9 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <ContactFloatingButton />
       </div>
+
     </BrowserRouter>
   );
 }
