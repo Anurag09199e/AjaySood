@@ -1,7 +1,14 @@
-.contact-floating-container {
+:root {
+  --contact-primary: #349181;
+  --contact-white: #ffffff;
+  --contact-shadow: 0 4px 15px rgba(52, 145, 129, 0.4);
+  --contact-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-floating-wrapper {
   position: fixed;
-  bottom: 20px;
-  right: 15px;
+  bottom: 30px;
+  right: 30px;
   z-index: 9999;
   display: flex;
   flex-direction: column;
@@ -12,135 +19,123 @@
 /* Tooltip */
 .contact-tooltip {
   position: absolute;
-  right: calc(100% + 15px);
-  bottom: 12px;
-  background: rgba(0, 0, 0, 0.8);
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%) translateX(10px);
+  background: #333;
   color: white;
   padding: 6px 12px;
   border-radius: 6px;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 14px;
   white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
   pointer-events: none;
-  animation: fadeIn 0.2s ease-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .contact-tooltip::after {
   content: '';
   position: absolute;
-  right: -5px;
+  right: -6px;
   top: 50%;
   transform: translateY(-50%);
-  border-width: 5px 0 5px 5px;
+  border-width: 6px 0 6px 6px;
   border-style: solid;
-  border-color: transparent transparent transparent rgba(0, 0, 0, 0.8);
+  border-color: transparent transparent transparent #333;
 }
 
-/* Main FAB */
-.contact-main-fab {
-  width: 55px;
-  height: 55px;
+.contact-main-button:hover + .contact-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* Main Button */
+.contact-main-button {
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
-  background-color: #349181;
-  color: white;
+  background-color: var(--contact-primary);
+  color: var(--contact-white);
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 20px rgba(52, 145, 129, 0.4);
+  box-shadow: var(--contact-shadow);
   position: relative;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  overflow: visible;
-  outline: none;
+  transition: var(--contact-transition);
+  z-index: 2;
+  padding: 0;
 }
 
-.contact-main-fab:hover {
-  transform: scale(1.1);
+.contact-main-button:hover {
+  transform: scale(1.05);
   filter: brightness(1.1);
 }
 
-.contact-main-fab:active {
+.contact-main-button:active {
   transform: scale(0.95);
 }
 
-.contact-main-fab.active {
-  background-color: #ff4d4d;
-  box-shadow: 0 4px 20px rgba(255, 77, 77, 0.4);
-}
-
-.fab-icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-  transition: transform 0.3s ease;
-}
-
-.contact-main-fab.active .fab-icon-container {
-  transform: rotate(90deg);
-}
-
-/* Ripple Animation */
-.fab-ripple {
+/* Ripple effect */
+.contact-ripple {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   border-radius: 50%;
-  background-color: #349181;
-  opacity: 0.5;
+  background-color: var(--contact-primary);
+  opacity: 0.6;
   z-index: -1;
-  animation: pulse-ripple 2s infinite;
+  animation: contact-pulse 2s infinite;
 }
 
-.contact-main-fab.active .fab-ripple {
-  display: none;
-}
-
-@keyframes pulse-ripple {
+@keyframes contact-pulse {
   0% {
     transform: scale(1);
-    opacity: 0.5;
+    opacity: 0.6;
   }
   100% {
-    transform: scale(1.8);
+    transform: scale(1.6);
     opacity: 0;
   }
 }
 
-/* Popup Card */
+/* Popup Menu */
 .contact-popup-card {
   position: absolute;
-  bottom: calc(100% + 20px);
+  bottom: 80px;
   right: 0;
-  width: 280px;
   background: white;
   border-radius: 16px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  transform: translateY(20px) scale(0.9);
-  pointer-events: none;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 240px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) scale(0.9);
+  transition: var(--contact-transition);
+  border: 1px solid rgba(52, 145, 129, 0.1);
+  z-index: 1;
 }
 
-.contact-popup-card.active {
+.contact-popup-card.open {
   opacity: 1;
+  visibility: visible;
   transform: translateY(0) scale(1);
-  pointer-events: all;
 }
 
 .contact-popup-header {
-  padding: 18px 20px;
-  background: #f8fbfb;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 16px 20px;
+  background: rgba(52, 145, 129, 0.05);
+  border-bottom: 1px solid rgba(52, 145, 129, 0.1);
 }
 
 .contact-popup-header h3 {
@@ -150,122 +145,109 @@
   color: #333;
 }
 
-.close-popup-btn {
+.contact-close-btn {
   background: transparent;
   border: none;
-  color: #999;
   cursor: pointer;
-  padding: 4px;
+  color: #666;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  transition: all 0.2s ease;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background 0.2s;
 }
 
-.close-popup-btn:hover {
+.contact-close-btn:hover {
   background: rgba(0, 0, 0, 0.05);
   color: #333;
 }
 
-.contact-popup-body {
-  padding: 10px;
+.contact-options-list {
+  padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.contact-card-option {
+.contact-option-item {
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding: 12px 15px;
+  gap: 12px;
+  padding: 12px 16px;
   text-decoration: none;
+  color: #333;
+  font-weight: 500;
   border-radius: 12px;
-  transition: all 0.2s ease;
+  transition: background 0.2s, transform 0.2s;
 }
 
-.icon-wrapper {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
+.contact-option-item:hover {
+  background: rgba(52, 145, 129, 0.08);
+  transform: translateX(4px);
+}
+
+.contact-option-icon {
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  border-radius: 10px;
 }
 
-.option-text {
+.contact-option-icon.call {
+  background: rgba(52, 145, 129, 0.15);
+  color: var(--contact-primary);
+}
+
+.contact-option-icon.whatsapp {
+  background: rgba(37, 211, 102, 0.15);
+  color: #25D366;
+}
+
+.contact-option-text {
   display: flex;
   flex-direction: column;
 }
 
-.label {
-  font-size: 15px;
+.contact-option-title {
+  font-size: 14px;
   font-weight: 600;
-  color: #333;
 }
 
-.sub-label {
+.contact-option-desc {
   font-size: 12px;
   color: #777;
 }
 
-/* Specific Option Styles */
-.contact-card-option.call {
-  background: rgba(52, 145, 129, 0.05);
-}
-
-.contact-card-option.call .icon-wrapper {
-  background: #349181;
-  color: white;
-}
-
-.contact-card-option.call:hover {
-  background: rgba(52, 145, 129, 0.1);
-  transform: translateX(-3px);
-}
-
-.contact-card-option.whatsapp {
-  background: rgba(37, 211, 102, 0.05);
-}
-
-.contact-card-option.whatsapp .icon-wrapper {
-  background: #25D366;
-  color: white;
-}
-
-.contact-card-option.whatsapp:hover {
-  background: rgba(37, 211, 102, 0.1);
-  transform: translateX(-3px);
-}
-
-/* Responsive Scaling */
-@media (min-width: 768px) {
-  .contact-floating-container {
-    bottom: 25px;
-    right: 25px;
-  }
-  
-  .contact-main-fab {
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  /* Tablet */
+  .contact-main-button {
     width: 60px;
     height: 60px;
   }
-}
-
-@media (min-width: 1024px) {
-  .contact-floating-container {
-    bottom: 30px;
-    right: 30px;
-  }
-  
-  .contact-main-fab {
-    width: 65px;
-    height: 65px;
+  .contact-popup-card {
+    bottom: 75px;
   }
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateX(10px); }
-  to { opacity: 1; transform: translateX(0); }
+@media (max-width: 640px) {
+  /* Mobile */
+  .contact-floating-wrapper {
+    bottom: 20px;
+    right: 15px;
+    max-width: 100%;
+  }
+  .contact-main-button {
+    width: 55px;
+    height: 55px;
+  }
+  .contact-popup-card {
+    bottom: 70px;
+    right: 0;
+    width: 220px;
+  }
+  .contact-tooltip {
+    display: none; /* Hide tooltip on touch devices */
+  }
 }
