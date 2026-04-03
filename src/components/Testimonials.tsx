@@ -10,13 +10,6 @@ const testimonialsData = [
     rating: 5
   },
   {
-    text: "The home grooming service is a game changer! My nervous Persian cat hates clinics, but she was perfectly calm with the DD's MaxxPet Clinic team at home. Professional, punctual, and so gentle.",
-    name: "Rahul Mehta",
-    pet: "Mittens (Persian Cat)",
-    image: "/src/image/mittens.jpg",
-    rating: 5
-  },
-  {
     text: "We've been coming to DD's MaxxPet Clinic for years. Our family's pets have always been treated here. The trust and continuity of care is unmatched.",
     name: "Sunita Kapoor",
     pet: "Bella (Regular Client)",
@@ -53,7 +46,7 @@ const Testimonials = () => {
   const [visibleCards, setVisibleCards] = useState(3);
   const [isTransitioning, setIsTransitioning] = useState(true);
   const timerRef = useRef<number | null>(null);
-  
+
   // Clone data for infinite loop: [last 3] [real items] [first 3]
   // Using 3 as a safe buffer for all screen sizes (max visibleCards is 3)
   const extendedData = [
@@ -95,7 +88,7 @@ const Testimonials = () => {
       setIsTransitioning(false);
       setCurrentIndex(3);
     }
-    
+
     // If we reached the start clones
     if (currentIndex <= 2) {
       setIsTransitioning(false);
@@ -132,21 +125,23 @@ const Testimonials = () => {
           <div className="section-pill">
             <span className="dot" /> What Pet Parents Say
           </div>
-          <h2>Trusted by <span style={{ color: 'var(--primary-light)' }}>Thousands</span> of Pet Parents</h2>
-          <p style={{ color: 'rgba(255,255,255,0.65)', marginTop: '1rem' }}>
+          <h2 style={{ color: '#2f8f83' }}>
+            Trusted by <span>Thousands</span> of Pet Parents
+          </h2>
+          <p style={{ color: 'rgba(255, 255, 255, 0.65)', marginTop: '1rem' }}>
             Hear from the families who trust DD's MaxxPet Clinic with their most beloved companions.
           </p>
         </div>
 
-        <div 
+        <div
           className="testimonials-carousel-viewport"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          <div 
+          <div
             className="testimonials-carousel-track"
             onTransitionEnd={handleTransitionEnd}
-            style={{ 
+            style={{
               transform: `translateX(-${(currentIndex * 100) / extendedData.length}%)`,
               width: `${(extendedData.length * 100) / visibleCards}%`,
               transition: isTransitioning ? 'transform 0.6s ease-in-out' : 'none'
@@ -162,23 +157,23 @@ const Testimonials = () => {
                   <div className="testimonial-card-header">
                     <div className="testimonial-stars">
                       {[...Array(5)].map((_, i) => (
-                        <Star 
-                          key={i} 
-                          size={16} 
-                          fill={i < t.rating ? "var(--accent)" : "none"} 
+                        <Star
+                          key={i}
+                          size={16}
+                          fill={i < t.rating ? "var(--accent)" : "none"}
                           stroke={i < t.rating ? "var(--accent)" : "rgba(255,255,255,0.2)"}
                         />
                       ))}
                     </div>
                     <div className="testimonial-quote-icon">
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 11L8 17H5L7 11V7H11V11H10ZM18 11L16 17H13L15 11V7H19V11H18Z" fill="var(--primary-light)" fillOpacity="0.3"/>
+                        <path d="M10 11L8 17H5L7 11V7H11V11H10ZM18 11L16 17H13L15 11V7H19V11H18Z" fill="var(--primary-light)" fillOpacity="0.3" />
                       </svg>
                     </div>
                   </div>
-                  
+
                   <p className="testimonial-text">{t.text}</p>
-                  
+
                   <div className="testimonial-author mt-auto">
                     <div className="testimonial-image-container">
                       <img src={t.image} alt={t.pet} className="testimonial-image" onError={(e) => {
@@ -197,14 +192,14 @@ const Testimonials = () => {
         </div>
 
         <div className="testimonials-carousel-controls">
-          <button 
-            className="carousel-nav-btn prev" 
+          <button
+            className="carousel-nav-btn prev"
             onClick={prevSlide}
             aria-label="Previous testimonial"
           >
             <ChevronLeft size={24} />
           </button>
-          
+
           <div className="carousel-dots">
             {testimonialsData.map((_, idx) => (
               <button
@@ -219,8 +214,8 @@ const Testimonials = () => {
             ))}
           </div>
 
-          <button 
-            className="carousel-nav-btn next" 
+          <button
+            className="carousel-nav-btn next"
             onClick={nextSlide}
             aria-label="Next testimonial"
           >

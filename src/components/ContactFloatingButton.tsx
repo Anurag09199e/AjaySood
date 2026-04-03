@@ -28,7 +28,7 @@ const ContactFloatingButton: React.FC = () => {
     };
   }, [isOpen]);
 
-  const phoneNumber = "91XXXXXXXXXX"; // User to replace with actual number
+  const phoneNumber = "+918800756268" // User to replace with actual number
   const whatsappText = "Hello I want to book service";
 
   return (
@@ -37,8 +37,8 @@ const ContactFloatingButton: React.FC = () => {
       <div className="contact-tooltip">Contact Us</div>
 
       {/* Main Floating Button */}
-      <button 
-        className="contact-main-button" 
+      <button
+        className="contact-main-button"
         onClick={toggleMenu}
         aria-label="Contact support"
         aria-expanded={isOpen}
@@ -51,8 +51,8 @@ const ContactFloatingButton: React.FC = () => {
       <div className={`contact-popup-card ${isOpen ? 'open' : ''}`}>
         <div className="contact-popup-header">
           <h3>How can we help?</h3>
-          <button 
-            className="contact-close-btn" 
+          <button
+            className="contact-close-btn"
             onClick={closeMenu}
             aria-label="Close menu"
           >
@@ -74,8 +74,8 @@ const ContactFloatingButton: React.FC = () => {
           </a>
 
           {/* WhatsApp Option */}
-          <a 
-            href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappText)}`} 
+          <a
+            href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappText)}`}
             className="contact-option-item"
             target="_blank"
             rel="noopener noreferrer"

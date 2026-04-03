@@ -22,49 +22,49 @@ const servicesList = [
   {
     slug: "vaccination",
     category: "Preventative",
-    title: "Pets vaccination in faridabad",
+    title: "Pets Vaccination in Faridabad",
     desc: "Complete vaccination programs to protect your pet from dangerous and life-threatening diseases.",
     image: vaccinationImg
   },
   {
     slug: "grooming",
     category: "Grooming",
-    title: "Pets grooming in faridabad",
+    title: "Pets Vrooming in Faridabad",
     desc: "From soothing baths to nail trimming — we make sure your pet looks and feels their best.",
     image: groomingImg
   },
   {
     slug: "dentistry",
     category: "Medical",
-    title: "Pets dental care in faridabad",
+    title: "Pets Dental Care in Faridabad",
     desc: "Complete dental care to keep your pet's teeth strong, breath fresh, and gums healthy.",
     image: dentalImg
   },
   {
     slug: "pet-store",
     category: "Retail",
-    title: "Pets shop in faridabad",
+    title: "Pets Shop in Faridabad",
     desc: "A wide range of premium pet foods, accessories, toys, and healthcare products to keep your pet happy and healthy.",
     image: storeImg
   },
   {
     slug: "surgery",
     category: "Medical",
-    title: "Pets surgery in faridabad",
+    title: "Pets Surgery in Faridabad",
     desc: "Expert surgical procedures with modern facilities and gentle, stress-free recovery protocols.",
     image: surgeryImg
   },
   {
     slug: "pathology",
     category: "Diagnostics",
-    title: "Pets Diagnostic Lab in faridabad",
+    title: "Pets Diagnostic Lab in Faridabad",
     desc: "Advanced diagnostics to detect and address health concerns before they become serious.",
     image: pathologyImg
   },
   {
     slug: "skin-care",
     category: "Dermatology",
-    title: "Pets skin care in faridabad",
+    title: "Pets Skin Care in Faridabad",
     desc: "Advanced skin care treatments for pets including allergy treatment, grooming support, and skin health management",
     image: skinCareImg
   },
