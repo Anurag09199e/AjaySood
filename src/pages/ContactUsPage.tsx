@@ -2,6 +2,7 @@ import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, MessageCircle } from 'l
 import { FormEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
 import doctorImg from "../image/pets-perent-3.png";
+import SEO from '../components/Shared/SEO';
 
 const ContactUsPage = () => {
   const [formData, setFormData] = useState({
@@ -33,6 +34,11 @@ const ContactUsPage = () => {
 
   return (
     <div className="contact-page animate-fade-in">
+      <SEO 
+        title="Contact Us | DD's MaxxPet Clinic Sector 17 Faridabad" 
+        description="Contact DD's MaxxPet Clinic in Faridabad today. Book an appointment, ask our experts a question, or find our phone number and address for any pet emergency."
+        canonical="/contact-us"
+      />
       {/* Hero */}
       <section className="inner-page-hero" style={{
         backgroundImage: `

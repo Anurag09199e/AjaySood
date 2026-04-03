@@ -3,10 +3,16 @@ import { Link } from 'react-router-dom';
 import Services from '../components/Services';
 import CTABanner from '../components/CTABanner';
 import doctorImg from "../image/pets-perent-1.png";
+import SEO from '../components/Shared/SEO';
 
 const ServicesPage = () => {
   return (
     <div>
+      <SEO 
+        title="Professional Veterinary Services | DD's MaxxPet Clinic Faridabad" 
+        description="Explore the wide range of professional veterinary services at DD's MaxxPet Clinic, Faridabad, from routine checkups and vaccinations to advanced surgeries."
+        canonical="/services"
+      />
       {/* Page Hero */}
       <section className="inner-page-hero" style={{
         backgroundImage: `

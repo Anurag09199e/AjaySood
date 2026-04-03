@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <SEO 
         title="DD's MaxxPet Clinic | Best Pet Clinic in Faridabad" 
-        description="DD's MaxxPet Clinic provides exceptional veterinary care in Faridabad including vaccination, grooming, surgery, and pathology. Book an appointment today!"
+        description="DD's MaxxPet Clinic in Faridabad offers expert veterinary care, including vaccination, grooming, surgery, and pathology. Book an appointment today for your pet."
         canonical="/"
       />
       <Hero />

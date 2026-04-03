@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle2, ChevronDown, ChevronUp, Phone } from 'lucide-
 import { useState } from 'react';
 import servicesData from '../data/servicesData';
 import CTABanner from '../components/CTABanner';
+import SEO from '../components/Shared/SEO';
 
 const ServiceDetailsPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -15,8 +16,11 @@ const ServiceDetailsPage = () => {
 
   return (
     <div>
-      {/* ── SEO Meta (title set via document.title for SPA) ── */}
-      {(() => { document.title = `${service.title} | DD's MaxxPet Clinic Veterinary Centre`; return null; })()}
+      <SEO 
+        title={`${service.title} | DD's MaxxPet Clinic Veterinary Centre`} 
+        description={service.metaDescription}
+        canonical={`/services/${service.slug}`}
+      />
 
       {/* ─────────────────── HERO ─────────────────── */}
       <section

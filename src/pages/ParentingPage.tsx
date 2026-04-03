@@ -6,8 +6,8 @@ const ParentingPage = () => {
     <>
       <SEO 
         title="Pet Parenting Counselling in Faridabad | Building Happy Bonds" 
-        description="Get expert guidance on pet parenting and behavioral counselling at DD's MaxxPet Clinic, Faridabad. Build a loving and structured bond with your pet."
-        canonical="/parenting"
+        description="Get expert pet parenting tips and advice from DD's MaxxPet Clinic. Learn how to provide the best care, nutrition, and lifestyle for your beloved dogs and cats."
+        canonical="/services/parenting-counselling"
       />
       <ParentingPageContent />
     </>

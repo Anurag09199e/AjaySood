@@ -2,10 +2,16 @@ import { MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Locations from '../components/Locations';
 import CTABanner from '../components/CTABanner';
+import SEO from '../components/Shared/SEO';
 
 const LocationsPage = () => {
   return (
     <div>
+      <SEO 
+        title="Our Clinic Location | DD's MaxxPet Clinic Sector 17 Faridabad" 
+        description="Visit DD's MaxxPet Clinic in the heart of Faridabad. Find our clinic location in Sector 17, check our operating hours, and get directions for your next visit."
+        canonical="/locations"
+      />
       {/* Page Hero */}
       <section className="inner-page-hero" style={{
         backgroundImage: `

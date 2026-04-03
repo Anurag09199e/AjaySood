@@ -1,11 +1,17 @@
 import DoctorProfile from '../components/DoctorProfile';
 import CTABanner from '../components/CTABanner';
 import doctorImg from "../image/pets-perent-2.png";
+import SEO from '../components/Shared/SEO';
 
 
 const DoctorsPage = () => {
   return (
     <div>
+      <SEO 
+        title="Meet Our Expert Veterinarians | DD's MaxxPet Clinic Faridabad" 
+        description="Meet the expert veterinary team at DD's MaxxPet Clinic in Faridabad. Our doctors bring decades of experience and passion to ensure your pet's best health."
+        canonical="/doctors"
+      />
       {/* Page Hero */}
       <section className="inner-page-hero" style={{
         backgroundImage: `
