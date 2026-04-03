@@ -10,20 +10,17 @@ import './Parenting.css';
 const dogPlans = [
   {
     title: 'New Puppy Setup',
-    price: '₹999',
     description: 'Essential first-time guidance.',
     features: ['Potty Training Plan', 'Feeding Schedule', 'Socialisation Tips', 'Home Safety Checklist']
   },
   {
     title: 'Behavioural Package',
-    price: '₹1999',
     description: 'Targeted behaviour correction.',
     features: ['Separation Anxiety Help', 'Bite Inhibition', 'Leash Training', 'Follow-up Session'],
     isPopular: true
   },
   {
     title: 'Complete Parenting',
-    price: '₹3499',
     description: 'Full lifecycle guidance.',
     features: ['Behavioural Package', 'Aggression Management', 'Multi-Pet Integration', 'Ongoing Support']
   }
@@ -32,20 +29,17 @@ const dogPlans = [
 const catPlans = [
   {
     title: 'New Kitten Setup',
-    price: '₹899',
     description: 'Essential first-time guidance.',
     features: ['Litter Training Plan', 'Feeding Schedule', 'Socialisation Tips', 'Home Safety Checklist']
   },
   {
     title: 'Behavioural Package',
-    price: '₹1799',
     description: 'Targeted behaviour correction.',
     features: ['Anxiety Relief Plan', 'Scratching Redirection', 'Play Enrichment', 'Follow-up Session'],
     isPopular: true
   },
   {
     title: 'Complete Parenting',
-    price: '₹2999',
     description: 'Full lifecycle guidance.',
     features: ['Behavioural Package', 'Fear & Aggression Help', 'Multi-Cat Integration', 'Ongoing Support']
   }

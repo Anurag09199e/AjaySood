@@ -11,20 +11,17 @@ import './SkinCare.css';
 const dogPlans = [
   {
     title: 'Basic Skin Check',
-    price: '₹799',
     description: 'Essential skin health screening.',
     features: ['Skin Examination', 'Flea & Tick Check', 'Basic Medicated Bath', 'Vet Consultation']
   },
   {
     title: 'Allergy Care',
-    price: '₹1499',
     description: 'Targeted allergy & irritation relief.',
     features: ['Allergy Diagnosis', 'Medicated Treatment', 'Coat Conditioning', 'Follow-up Visit'],
     isPopular: true
   },
   {
     title: 'Premium Skin Therapy',
-    price: '₹2499',
     description: 'Full dermatology & coat wellness.',
     features: ['Allergy Care Package', 'Infection Prevention', 'Tick Control Program', 'Nutrition Guidance']
   }
@@ -33,20 +30,17 @@ const dogPlans = [
 const catPlans = [
   {
     title: 'Basic Skin Check',
-    price: '₹699',
     description: 'Essential feline skin screening.',
     features: ['Skin Examination', 'Flea & Tick Check', 'Gentle Medicated Bath', 'Vet Consultation']
   },
   {
     title: 'Allergy Care',
-    price: '₹1299',
     description: 'Targeted cats allergy & irritation.',
     features: ['Allergy Diagnosis', 'Medicated Treatment', 'Coat Conditioning', 'Follow-up Visit'],
     isPopular: true
   },
   {
     title: 'Premium Skin Therapy',
-    price: '₹2199',
     description: 'Full feline dermatology wellness.',
     features: ['Allergy Care Package', 'Infection Prevention', 'Flea Control Program', 'Dietary Guidance']
   }

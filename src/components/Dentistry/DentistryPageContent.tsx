@@ -11,20 +11,17 @@ import './Dentistry.css';
 const dogPlans = [
   {
     title: 'Basic Dental Check',
-    price: '₹999',
     description: 'Routine oral examination.',
     features: ['Teeth Assessment', 'Gum Health Check', 'Breath Analysis', 'Home Care Advice']
   },
   {
     title: 'Standard Cleaning',
-    price: '₹2499',
     description: 'Deep cleaning and polishing.',
     features: ['Basic Check Included', 'Ultrasonic Scaling', 'Polishing', 'Plaque Removal'],
     isPopular: true
   },
   {
     title: 'Premium Dental Care',
-    price: '₹4999',
     description: 'Complete anesthesia-based care.',
     features: ['Standard Cleaning', 'Full Anaesthesia', 'Minor Extractions', 'Post-Op Meds']
   }
@@ -33,20 +30,17 @@ const dogPlans = [
 const catPlans = [
   {
     title: 'Basic Dental Check',
-    price: '₹899',
     description: 'Routine feline oral screening.',
     features: ['Teeth Assessment', 'Gum Health Check', 'Breath Analysis', 'Home Care Advice']
   },
   {
     title: 'Standard Cleaning',
-    price: '₹2199',
     description: 'Deep cleaning and polishing.',
     features: ['Basic Check Included', 'Ultrasonic Scaling', 'Polishing', 'Plaque Removal'],
     isPopular: true
   },
   {
     title: 'Premium Dental Care',
-    price: '₹4499',
     description: 'Complete feline dental wellness.',
     features: ['Standard Cleaning', 'Full Anaesthesia', 'Minor Extractions', 'Post-Op Meds']
   }

@@ -11,20 +11,17 @@ import './Vaccination.css';
 const dogPlans = [
   {
     title: 'Basic Puppy',
-    price: '₹1299',
     description: 'Essential core vaccines.',
     features: ['Health Check', 'First DHPPi', 'Deworming', 'Health Record Book']
   },
   {
     title: 'Standard Annual',
-    price: '₹1999',
     description: 'Yearly booster protection.',
     features: ['Adult Core Boosters', 'Anti-Rabies', 'Full Physical Exam', 'Weight Check'],
     isPopular: true
   },
   {
     title: 'Premium Protection',
-    price: '₹2999',
     description: 'Comprehensive travel & lifestyle.',
     features: ['Standard Annual', 'Kennel Cough', 'Leptospirosis', 'Travel Certificate']
   }
@@ -33,20 +30,17 @@ const dogPlans = [
 const catPlans = [
   {
     title: 'Basic Kitten',
-    price: '₹1199',
     description: 'Essential core vaccines.',
     features: ['Health Check', 'First Tricat', 'Deworming', 'Health Record Book']
   },
   {
     title: 'Standard Annual',
-    price: '₹1899',
     description: 'Yearly booster protection.',
     features: ['Adult Core Boosters', 'Anti-Rabies', 'Full Physical Exam', 'Weight Check'],
     isPopular: true
   },
   {
     title: 'Premium Protection',
-    price: '₹2799',
     description: 'Comprehensive feline lifestyle.',
     features: ['Standard Annual', 'Feline Leukemia', 'Chlamydia Scan', 'Travel Certificate']
   }

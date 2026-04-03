@@ -11,20 +11,17 @@ import '../Vaccination/Vaccination.css';
 const surgeryPlans = [
   {
     title: 'Pre-OP Checkup',
-    price: '₹1499',
     description: 'Essential surgical clearance.',
     features: ['Blood Panel', 'ECG Heart Check', 'Vitals Assessment', 'Pain Med Plan']
   },
   {
     title: 'Routine Spay/Neuter',
-    price: '₹6999',
     description: 'Standard surgical sterilization.',
     features: ['Safe Anesthesia', 'Full Monitoring', 'Day Care Recovery', 'E-Collar Included'],
     isPopular: true
   },
   {
     title: 'Advanced Procedure',
-    price: '₹14999+',
     description: 'Complex or soft-tissue surgeries.',
     features: ['Board Certified Surgeon', 'Dedicated ICU Recovery', 'Overnight Care', 'Follow-up Consults']
   }

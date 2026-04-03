@@ -11,20 +11,17 @@ import './Grooming.css';
 const dogPlans = [
   {
     title: "Basic Grooming",
-    price: "₹999",
     description: "Essential bathing and hygiene care.",
     features: ["Bath & Blow Dry", "Nail Trimming", "Ear Cleaning", "De-shedding"]
   },
   {
     title: "Standard Style",
-    price: "₹1,499",
     description: "Professional cleaning with expert haircut.",
     features: ["Basic + Haircut", "Hygiene Clip", "Paw Pad Care", "Flea Bath"],
     isPopular: true
   },
   {
     title: "Premium Spa",
-    price: "₹2,499",
     description: "Ultimate luxury for your dog's shine.",
     features: ["Standard + Aromatherapy", "Teeth Brushing", "Body Massage", "Aromatic Deodorant"]
   }
@@ -33,20 +30,17 @@ const dogPlans = [
 const catPlans = [
   {
     title: "Standard Feline",
-    price: "₹1,299",
     description: "Safe and gentle feline hygiene.",
     features: ["Bath & Gentle Drying", "Nail Clipping", "Ear Hygiene", "Eye Cleaning"]
   },
   {
     title: "Luxury Feline",
-    price: "₹1,999",
-    description: "Premium styling for your elegant cat.",
+    description: "Professional cleaning with expert haircut.",
     features: ["Standard + Coat Styling", "Mat Removal", "Scented Cologne", "Relaxation Treatment"],
     isPopular: true
   },
   {
     title: "Ultra Cat Spa",
-    price: "₹2,999",
     description: "Complete skin and coat wellness.",
     features: ["Luxury + Deep Mask", "Paw Care", "Dental Cleaning", "Expert Skin Analysis"]
   }

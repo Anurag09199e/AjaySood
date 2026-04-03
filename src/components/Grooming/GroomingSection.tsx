@@ -3,7 +3,6 @@ import { Check } from 'lucide-react';
 
 interface PricingPlan {
   plan: string;
-  price: string;
   features: string[];
   isPopular?: boolean;
 }
@@ -41,7 +40,7 @@ const GroomingSectionGrid = ({ title, description, image, plans, reverse }: Groo
             >
               {plan.isPopular && <div className="popular-badge">MOST POPULAR</div>}
               <h3 className="plan-title">{plan.plan}</h3>
-              <div className="plan-price">₹{plan.price}</div>
+
               <ul className="plan-features">
                 {plan.features?.map((feature, fIdx) => (
                   <li key={fIdx}>

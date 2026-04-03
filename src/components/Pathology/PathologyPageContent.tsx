@@ -10,20 +10,17 @@ import './Pathology.css';
 const dogPlans = [
   {
     title: 'Basic Screening',
-    price: '₹1499',
     description: 'Essential fluid analysis.',
     features: ['Urinalysis', 'Fecal Processing', 'Basic Cytology', 'Rapid Results']
   },
   {
     title: 'Standard Profile',
-    price: '₹2999',
     description: 'Complete blood analysis.',
     features: ['Complete Blood Count (CBC)', 'Basic Chemistry Panel', 'Liver/Kidney Check', 'Vet Review'],
     isPopular: true
   },
   {
     title: 'Premium Diagnostics',
-    price: '₹4999',
     description: 'Advanced hormonal & organ test.',
     features: ['Standard Profile', 'Thyroid Panel', 'Full Biochemistry', 'Specialized Testing']
   }
@@ -32,20 +29,17 @@ const dogPlans = [
 const catPlans = [
   {
     title: 'Basic Screening',
-    price: '₹1299',
     description: 'Essential feline fluid analysis.',
     features: ['Urinalysis', 'Fecal Processing', 'Basic Cytology', 'Rapid Results']
   },
   {
     title: 'Standard Profile',
-    price: '₹2799',
     description: 'Complete feline blood analysis.',
     features: ['Complete Blood Count (CBC)', 'Basic Chemistry Panel', 'Liver/Kidney Check', 'Vet Review'],
     isPopular: true
   },
   {
     title: 'Premium Diagnostics',
-    price: '₹4799',
     description: 'Advanced feline organ testing.',
     features: ['Standard Profile', 'Thyroid Panel', 'Full Biochemistry', 'Specialized Testing']
   }
