@@ -11,7 +11,7 @@ const GroomingPage = () => {
     <div className="grooming-page-root">
       <SEO 
         title="Best Dog Grooming in Faridabad | Professional Pet Styling" 
-        description="Treat your pet to the best grooming experience in Faridabad. DD's MaxxPet Clinic offers professional styling, baths, and hygiene care for dogs and cats."
+        description="Treat your pet to the best grooming experience in Faridabad. DD's MaxxPet Clinic offers professional styling, baths, and hygiene care for all dogs and cats."
         canonical="/grooming"
       />
       <GroomingPageContent />
