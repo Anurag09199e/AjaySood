@@ -20,12 +20,29 @@ const ContactUsPage = () => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    // Prepare WhatsApp message
+    const whatsappNumber = '918800756268';
+    const text = `*New Appointment Request*%0A%0A` +
+      `*Name:* ${formData.name}%0A` +
+      `*Phone:* ${formData.phone}%0A` +
+      `*Email:* ${formData.email}%0A` +
+      `*Pet Name:* ${formData.petName || 'N/A'}%0A` +
+      `*Pet Type:* ${formData.petType || 'N/A'}%0A` +
+      `*Message:* ${formData.message}`;
+
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
+
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
+
+    // Simulate success feedback
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitSuccess(true);
       setFormData({ name: '', phone: '', email: '', petName: '', petType: '', message: '' });
       setTimeout(() => setSubmitSuccess(false), 5000);
-    }, 1500);
+    }, 1000);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -142,8 +159,8 @@ const ContactUsPage = () => {
                 </div>
 
                 <div className="form-field">
-                  <label htmlFor="email">Email Address *</label>
-                  <input id="email" name="email" type="email" required placeholder="you@example.com" value={formData.email} onChange={handleChange} />
+                  <label htmlFor="email">Email Address</label>
+                  <input id="email" name="email" type="email" placeholder="you@example.com" value={formData.email} onChange={handleChange} />
                 </div>
 
                 <div className="form-grid-2">
@@ -165,8 +182,8 @@ const ContactUsPage = () => {
                 </div>
 
                 <div className="form-field">
-                  <label htmlFor="message">Message / Describe the Issue *</label>
-                  <textarea id="message" name="message" rows={5} required placeholder="How can we help your pet today?" value={formData.message} onChange={handleChange} />
+                  <label htmlFor="message">Message / Describe the Issue</label>
+                  <textarea id="message" name="message" rows={5} placeholder="How can we help your pet today?" value={formData.message} onChange={handleChange} />
                 </div>
 
                 <button type="submit" className="btn btn-primary" style={{ width: '100%', padding: '1.1rem', fontSize: '1rem', marginTop: '0.5rem' }} disabled={isSubmitting}>
