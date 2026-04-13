@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     q: "What are your clinic timings?",
-    a: "Our clinic is open 10 AM – 8 PM, Monday to Saturday (closed Sundays). Home service availability may vary — please call to confirm."
+    a: "Our clinic is open 10 AM – 8 PM, all 7 days a week. Home service availability may vary — please call to confirm."
   },
   {
     q: "Do you offer pet care at home?",

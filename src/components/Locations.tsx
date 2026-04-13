@@ -5,7 +5,7 @@ const clinics = [
     name: "DD's MaxxPet Clinic",
     address: "Clinic site -3, Main market, Sector 17 Rd, near Dristi eye centre, Sector 17, Faridabad, Haryana 121002",
     phone: "088007 56268",
-    hours: "10 AM – 8 PM, Mon-Sat",
+    hours: "10 AM – 8 PM, Mon-Sun",
     mapUrl: "https://maps.google.com/?q=Maxx+Pet+Clinic+Faridabad"
   }
 ];
@@ -56,7 +56,7 @@ const Locations = () => {
                   <div className="location-info-text">
                     <div className="location-info-label">Hours</div>
                     <div className="location-info-value">{clinic.hours}</div>
-                    <div className="location-info-value" style={{ color: 'var(--text-light)', fontWeight: 400 }}>Closed on Sundays</div>
+                    <div className="location-info-value" style={{ color: 'var(--text-light)', fontWeight: 400 }}>Open 7 Days a week</div>
                   </div>
                 </div>
 

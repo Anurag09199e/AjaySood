@@ -53,7 +53,7 @@ const LocationsPage = () => {
             <div className="inner-hero-stat-divider" />
             <div className="inner-hero-stat">
               <strong>Open</strong>
-              <span>Mon - Sat</span>
+              <span>Mon - Sun</span>
             </div>
           </div>
         </div>

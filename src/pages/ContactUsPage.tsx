@@ -211,7 +211,7 @@ const ContactUsPage = () => {
                 </div>
                 <div className="clinic-info-row">
                   <Clock size={16} className="clinic-info-icon" />
-                  <p><strong>Mon-Sat:</strong> 10:00 AM – 8:00 PM<br /><strong>Sunday:</strong> Closed</p>
+                  <p><strong>Mon-Sun:</strong> 10:00 AM – 8:00 PM</p>
                 </div>
               </div>
             </div>

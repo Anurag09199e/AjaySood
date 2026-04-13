@@ -14,13 +14,17 @@ import VaccinationPage from './pages/VaccinationPage';
 import PathologyPage from './pages/PathologyPage';
 import ParentingPage from './pages/ParentingPage';
 import GroomingPage from './pages/GroomingPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsConditionsPage from './pages/TermsConditionsPage';
 import ContactFloatingButton from './components/ContactFloatingButton';
+import ScrollToTop from './components/Shared/ScrollToTop';
 import './App.css';
 
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="app-container">
         <Navbar />
         <main>
@@ -37,6 +41,8 @@ function App() {
             <Route path="/services/pathology" element={<PathologyPage />} />
             <Route path="/services/parenting-counselling" element={<ParentingPage />} />
             <Route path="/services/grooming" element={<GroomingPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/terms-and-conditions" element={<TermsConditionsPage />} />
             <Route path="/services/:slug" element={<ServiceDetailsPage />} />
           </Routes>
         </main>

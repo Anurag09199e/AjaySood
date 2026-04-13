@@ -42,12 +42,12 @@ const Footer = () => {
           <div className="footer-col">
             <h5>Services</h5>
             <div className="footer-links">
-              <a href="#">Surgery</a>
-              <a href="#">Vaccination</a>
-              <a href="#">Pet Grooming</a>
-              <a href="#">Dentistry</a>
-              <a href="#">Lab Diagnostics</a>
-              <a href="#">Pet Parenting</a>
+              <Link to="/services/surgery">Surgery</Link>
+              <Link to="/services/vaccination">Vaccination</Link>
+              <Link to="/services/grooming">Pet Grooming</Link>
+              <Link to="/services/dentistry">Dentistry</Link>
+              <Link to="/services/pathology">Lab Diagnostics</Link>
+              <Link to="/services/parenting-counselling">Pet Parenting</Link>
             </div>
           </div>
 
@@ -64,7 +64,7 @@ const Footer = () => {
             </a>
             <a href="#" style={{ cursor: 'default', pointerEvents: 'none' }}>
               <Clock size={16} />
-              Mon-Sat: 10AM–8PM
+              Mon-Sun: 10AM–8PM
             </a>
           </div>
 
@@ -73,6 +73,10 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>
             © {new Date().getFullYear()} DD's MaxxPet Clinic. All rights reserved.
+            <span> · </span>
+            <Link to="/privacy-policy" style={{ textDecoration: 'underline' }}>Privacy Policy</Link>
+            <span> · </span>
+            <Link to="/terms-and-conditions" style={{ textDecoration: 'underline' }}>Terms & Conditions</Link>
             <span> · </span>
             Made with ❤️ for every pet parent in Faridabad.
           </p>
