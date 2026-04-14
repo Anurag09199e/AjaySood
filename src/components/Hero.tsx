@@ -34,8 +34,8 @@ const Hero = () => {
       <div className="hero-bg-shapes" aria-hidden="true" />
       <div className="hero-inner">
         <div className="hero-content-col">
-          <h1 className="hero-title">
-            Your Love, <span className="hero-title-accent">Our Care</span>
+          <h1 className="hero-title" style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', lineHeight: '1.3' }}>
+            DD's MaxxPet Clinic <br/><span className="hero-title-accent" style={{ fontSize: 'clamp(1rem, 3vw, 2rem)' }}>Best Pet Clinic in Faridabad</span>
           </h1>
           <p className="hero-desc">
             <strong>DD's MaxxPet Clinic</strong> — fostering compassion and advanced healthcare for pets.<span className="hero-desc-sub">
