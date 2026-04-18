@@ -2750,7 +2750,7 @@ main {
 
 /* ── Why Choose Us ── */
 .specialty-why-section {
-  background: var(--grad-hero);
+  background: var(--grad-primary);
 }
 
 .specialty-why-section .section-pill {
@@ -2767,6 +2767,13 @@ main {
   color: white;
 }
 
+.specialty-why-section h2 .gradient-text {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .specialty-why-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -2775,12 +2782,15 @@ main {
 }
 
 .specialty-why-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 18px;
-  padding: 1.8rem;
-  backdrop-filter: blur(8px);
-  transition: background 0.2s, transform 0.2s;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .specialty-why-card:hover {
@@ -2789,13 +2799,16 @@ main {
 }
 
 .specialty-why-num {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 900;
-  color: var(--primary-light);
-  opacity: 0.35;
+  color: white;
+  opacity: 0.15;
   line-height: 1;
   margin-bottom: 0.75rem;
   font-variant-numeric: tabular-nums;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
 }
 
 .specialty-why-card h4 {
@@ -2806,9 +2819,9 @@ main {
 }
 
 .specialty-why-card p {
-  font-size: 0.87rem;
-  color: rgba(255, 255, 255, 0.72);
-  line-height: 1.6;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
   margin: 0;
 }
 

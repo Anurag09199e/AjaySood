@@ -381,6 +381,53 @@ const servicesData: ServiceDetails[] = [
             { q: "Why is grain-free bad?", a: "Recent studies have linked boutique, grain-free diets to certain canine heart diseases (DCM). Grains provide excellent carbohydrates for most dogs." },
         ],
         relatedSlugs: ["wellness", "parenting-counselling", "pathology"],
+    },
+    {
+        slug: "pet-store",
+        title: "Pet Store & Accessories",
+        shortTitle: "Pet Store",
+        tagline: "Premium pet foods, accessories, toys, and healthcare products — all under one roof.",
+        metaDescription: "Shop premium pet food, accessories, toys, and healthcare products at DD's MaxxPet Clinic pet store in Faridabad. Everything your dog or cat needs, in one place.",
+        heroImage: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=1920&q=80",
+        heroGradient: "linear-gradient(135deg,rgba(0,51,51,0.85) 0%,rgba(0,102,102,0.72) 60%,rgba(0,51,51,0.90) 100%)",
+        icon: "🛍️",
+        category: "Retail",
+        intro: "Our in-clinic pet store is stocked with a carefully curated range of veterinary-recommended products. From nutritionally balanced premium foods to enrichment toys, grooming tools, and healthcare essentials — everything we stock is handpicked by our vets to ensure only the best reaches your pet. No guesswork, just trusted products backed by clinical expertise.",
+        stats: [
+            { value: "Premium", label: "Vetted Products" },
+            { value: "All Breeds", label: "Covered" },
+            { value: "Vet", label: "Recommended" },
+            { value: "In-Clinic", label: "Convenience" },
+        ],
+        conditions: [
+            { name: "Premium Pet Nutrition", desc: "A wide selection of globally trusted dry, wet, and prescription diets for dogs and cats of all life stages." },
+            { name: "Grooming Essentials", desc: "Professional-grade shampoos, conditioners, brushes, nail clippers, and coat care tools." },
+            { name: "Enrichment & Toys", desc: "Stimulating toys, chews, and interactive feeders that keep your pet mentally and physically engaged." },
+            { name: "Healthcare Products", desc: "De-worming tablets, flea and tick treatments, dental chews, joint supplements, and more — all vet approved." },
+        ],
+        procedures: [
+            "Prescription & Therapeutic Diets",
+            "Premium Dry & Wet Pet Food",
+            "Grooming Tools & Accessories",
+            "Dental Hygiene Kits",
+            "Anti-parasitic Treatments",
+            "Joint & Mobility Supplements",
+            "Enrichment Toys & Chews",
+            "Travel & Safety Accessories",
+        ],
+        whyChooseUs: [
+            { heading: "Vet-Curated Selection", body: "Every product on our shelves has been reviewed and approved by our veterinary team — no gimmicks, no empty marketing promises." },
+            { heading: "Prescription Diet Access", body: "We stock specialized therapeutic diets for conditions like kidney disease, obesity, urinary disorders, and food allergies." },
+            { heading: "Expert Guidance On-Spot", body: "Our staff can help you pick the right food, supplement, or accessory based on your pet's specific breed, age, and health status." },
+            { heading: "One-Stop Convenience", body: "Combine your vet visit with a quick shop — saving you an extra trip and ensuring everything you buy is clinically appropriate." },
+        ],
+        faqs: [
+            { q: "Do you stock food for specific breeds?", a: "Yes, we carry breed-specific and life-stage-specific diets for puppies, adults, and seniors of various breeds including large and small breeds." },
+            { q: "Can I buy prescription diets without a vet visit?", a: "Therapeutic and prescription diets require a valid prescription from our vets, which we are happy to issue during a consultation." },
+            { q: "Do you carry products for cats?", a: "Absolutely! We stock a comprehensive range of feline nutrition, grooming products, litter accessories, and enrichment toys." },
+            { q: "Are products available for pickup after a vet appointment?", a: "Yes, you can purchase from our store right after your pet's appointment, so everything stays convenient in one visit." },
+        ],
+        relatedSlugs: ["wellness", "grooming", "nutrition-counselling"],
     }
 ];
 

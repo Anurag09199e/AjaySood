@@ -7,6 +7,7 @@ const TermsConditionsPage = () => {
         title="Terms & Conditions | DD's MaxxPet Clinic Faridabad" 
         description="Terms and conditions for services provided by DD's MaxxPet Clinic."
         canonical="/terms-and-conditions"
+        robots="noindex, nofollow"
       />
       
       <section className="inner-page-hero" style={{ background: 'var(--grad-primary)', padding: '60px 0 40px 0', minHeight: 'unset' }}>

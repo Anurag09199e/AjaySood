@@ -7,6 +7,7 @@ const PrivacyPolicyPage = () => {
         title="Privacy Policy | DD's MaxxPet Clinic Faridabad" 
         description="Privacy policy and data protection guidelines for DD's MaxxPet Clinic."
         canonical="/privacy-policy"
+        robots="noindex, nofollow"
       />
       
       <section className="inner-page-hero" style={{ background: 'var(--grad-primary)', padding: '60px 0 40px 0', minHeight: 'unset' }}>
