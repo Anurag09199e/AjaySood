@@ -7,7 +7,7 @@ const VaccinationPage = () => {
       <SEO 
         title="Pet Vaccination in Faridabad | Best Puppy & Cat Vaccine Packages" 
         description="Ensure your pet's long-term health with professional vaccination services at DD's MaxxPet Clinic, Faridabad. Best puppy and cat vaccine packages are available."
-        canonical="/vaccination"
+        canonical="/services/vaccination"
       />
       <VaccinationPageContent />
     </>

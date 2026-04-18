@@ -7,7 +7,7 @@ const SkinCarePage = () => {
       <SEO 
         title="Expert Pet Skin Clinic in Faridabad | Healthy Skin & Fur" 
         description="Address your pet's skin issues with specialized dermatology care at DD's MaxxPet Clinic, Faridabad. Expert diagnosis and treatment for all pet skin diseases."
-        canonical="/skin-care"
+        canonical="/services/skin-care"
       />
       <SkinCarePageContent />
     </>

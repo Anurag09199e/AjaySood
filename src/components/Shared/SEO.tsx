@@ -4,9 +4,10 @@ interface SEOProps {
   title: string;
   description: string;
   canonical?: string;
+  robots?: string;
 }
 
-const SEO = ({ title, description, canonical }: SEOProps) => {
+const SEO = ({ title, description, canonical, robots = 'index, follow' }: SEOProps) => {
   const siteUrl = 'https://ddmaxxpet.com'; // Adjust to actual production URL if different
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
 
@@ -15,6 +16,8 @@ const SEO = ({ title, description, canonical }: SEOProps) => {
       {/* Basic Meta Tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="robots" content={robots} />
+      <meta name="googlebot" content={robots} />
       <link rel="canonical" href={fullCanonical} />
 
       {/* Open Graph / Facebook */}

@@ -29,7 +29,7 @@ const servicesList = [
   {
     slug: "grooming",
     category: "Grooming",
-    title: "Pets Vrooming in Faridabad",
+    title: "Pets Grooming in Faridabad",
     desc: "From soothing baths to nail trimming — we make sure your pet looks and feels their best.",
     image: groomingImg
   },

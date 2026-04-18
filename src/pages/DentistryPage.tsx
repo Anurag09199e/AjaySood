@@ -7,7 +7,7 @@ const DentistryPage = () => {
       <SEO 
         title="Pets Dental Clinic in Faridabad | Complete Oral Care" 
         description="Maintain your pet's oral health with professional dental cleanings and scaling at DD's MaxxPet Clinic, Faridabad. Complete dental wellness for dogs and cats."
-        canonical="/dentistry"
+        canonical="/services/dentistry"
       />
       <DentistryPageContent />
     </>
