@@ -1,7 +1,7 @@
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, MessageCircle } from 'lucide-react';
 import { FormEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
-import doctorImg from "../image/pets-perent-3.png";
+import doctorImg from '../image/contact_section.png';
 import SEO from '../components/Shared/SEO';
 
 const ContactUsPage = () => {
@@ -59,7 +59,7 @@ const ContactUsPage = () => {
       {/* Hero */}
       <section className="inner-page-hero" style={{
         backgroundImage: `
-          linear-gradient(135deg, rgba(129, 167, 172, 0.82) 0%, rgba(13,89,73,0.75) 50%, rgba(61, 74, 71, 0.85) 100%),
+          linear-gradient(135deg, rgba(200, 155, 60, 0.82) 0%, rgba(200, 155, 60,0.75) 50%, rgba(26, 26, 26, 0.85) 100%),
           url(${doctorImg})
         `,
       }}>
@@ -216,7 +216,7 @@ const ContactUsPage = () => {
               </div>
             </div>
 
-            <div style={{ background: 'var(--primary-glow)', border: '1px solid var(--border-teal)', borderRadius: 'var(--r-lg)', padding: '1.5rem', textAlign: 'center' }}>
+            <div style={{ background: 'var(--primary-glow)', border: '1px solid var(--border-gold)', borderRadius: 'var(--r-lg)', padding: '1.5rem', textAlign: 'center' }}>
               <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🐾</div>
               <h5 style={{ color: 'var(--primary-dark)', marginBottom: '0.4rem', fontSize: '0.95rem' }}>Need Help? Call Us</h5>
               <a href="tel:+918800756268" style={{ display: 'block', fontSize: '1.25rem', fontWeight: 800, color: 'var(--primary)', marginTop: '0.5rem' }}>

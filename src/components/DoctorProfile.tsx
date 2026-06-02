@@ -1,5 +1,5 @@
 import { Award, ShieldCheck, Microscope, HeartPulse } from 'lucide-react';
-import doctorImg from "../image/doctor.jpeg";
+import doctorImg from '../image/about_us.png';
 
 const capacities = [
   "Senior Veterinary Consultant & Surgeon",

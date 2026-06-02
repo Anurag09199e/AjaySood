@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { ArrowRight, Heart, Stethoscope, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import clinicFrontImg from '../image/clinic-front.webp';
-import clinic1Img from '../image/clinic-1.jpeg';
-import clinic2Img from '../image/clinic-2.jpeg';
+import clinicFrontImg from '../image/hero_section.png';
+import clinic1Img from '../image/hero_section.png';
+import clinic2Img from '../image/hero_section.png';
 
 // Slider images
 const sliderImages = [

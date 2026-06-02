@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ClipboardList, Stethoscope, BriefcaseMedical } from 'lucide-react';
-import pathologyHeroImg from '../../image/OIP.webp';
+import pathologyHeroImg from '../../image/diagnostics.png';
 import './PathologySecondaryHero.css';
 
 const PathologySecondaryHero = () => {
@@ -20,7 +20,7 @@ const PathologySecondaryHero = () => {
             <span className="psh-title-green">Pets Pathological Laboratory in Faridabad</span>
           </h1>
           <p className='text-bold'>Advanced in-house diagnostics for fast, accurate results — helping us detect and treat health issues before they become serious</p><br />
-          <Link to="/contact-us" className="btn psh-btn">
+          <Link to="/contact-us" className="btn btn-primary psh-btn">
             Book Appointment
           </Link>
 

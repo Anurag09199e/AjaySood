@@ -37,7 +37,7 @@ const ServiceSubHero = ({ titleLine1, titleLine2, image, imageLeft, buttonText, 
 
           {description && <p className="ssub-desc">{description}</p>}
 
-          <Link to="/contact-us" className="btn ssub-btn">
+          <Link to="/contact-us" className="btn btn-primary ssub-btn">
             {buttonText}
           </Link>
 

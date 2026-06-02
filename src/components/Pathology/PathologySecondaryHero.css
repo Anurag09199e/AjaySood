@@ -64,7 +64,7 @@
 }
 
 .psh-title-green {
-  color: #349181;
+  color: var(--primary);
 }
 
 @media (max-width: 768px) {
@@ -74,8 +74,8 @@
 }
 
 .psh-btn {
-  background-color: #349181;
-  color: #fff;
+  
+  
   padding: 0.8rem 2rem;
   border-radius: 8px;
   font-weight: 600;
@@ -85,9 +85,9 @@
   transition: all 0.3s ease;
 }
 
-.psh-btn:hover {
-  background-color: #2e7c73;
-  color: #fff;
+.psh-btn {
+  
+  
   transform: translateY(-2px);
 }
 
@@ -120,7 +120,7 @@
 
 .psh-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(52, 145, 129, 0.1);
+  box-shadow: 0 8px 25px rgba(200, 155, 60, 0.1);
 }
 
 .psh-card-icon {

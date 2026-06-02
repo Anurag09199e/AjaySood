@@ -3,7 +3,7 @@ import VaccinationSubHero from '../Vaccination/VaccinationSubHero';
 import PricingCard from '../Shared/PricingCard';
 import CTABanner from '../CTABanner';
 import { ClipboardList, Stethoscope, BriefcaseMedical } from 'lucide-react';
-import pathologyImg from '../../image/OIP.webp';
+import pathologyImg from '../../image/diagnostics.png';
 import '../../pages/GroomingPage.css';
 import './Pathology.css';
 

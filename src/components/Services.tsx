@@ -2,14 +2,14 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Import all images for services
-import parentingImg from "../image/pets-perent-1.png";
-import vaccinationImg from "../image/vaccination-1.png";
-import groomingImg from "../image/pet-grooming.jpeg";
-import dentalImg from "../image/Dental.webp";
-import storeImg from "../image/store.jpeg";
-import surgeryImg from "../image/surgery-1.png";
-import pathologyImg from "../image/OIP.webp";
-import skinCareImg from "../image/skin-3.png";
+import parentingImg from '../image/pet_nutrition.png';
+import vaccinationImg from '../image/vaccination.png';
+import groomingImg from '../image/grooming_spa.png';
+import dentalImg from '../image/dental_care.png';
+import storeImg from '../image/hero_section.png';
+import surgeryImg from '../image/surgery.png';
+import pathologyImg from '../image/diagnostics.png';
+import skinCareImg from '../image/wellness_exams.png';
 
 const servicesList = [
   {

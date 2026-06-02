@@ -2,9 +2,6 @@ import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
-
-import logoImg from '../assets/maxxpet-logo.JPG';
-
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,7 +27,7 @@ const Navbar = () => {
       <div className="container">
         <div className="logo">
           <Link to="/">
-            <img src={logoImg} alt="DD's MaxxPet Clinic Logo" style={{ height: '50px', width: 'auto' }} />
+            <img src="/logo.png" alt="DD's MaxxPet Clinic Logo" style={{ height: '50px', width: 'auto' }} />
           </Link>
         </div>
 
@@ -103,9 +100,9 @@ const Navbar = () => {
               </Link>
             );
           })}
-          <Link 
-            to="/contact-us" 
-            className="btn btn-primary" 
+          <Link
+            to="/contact-us"
+            className="btn btn-primary"
             style={{ marginTop: '1rem', justifyContent: 'center' }}
             onClick={() => setMenuOpen(false)}
           >

@@ -28,7 +28,7 @@
   top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background: #349181;
+  background: var(--primary);
   color: white;
   padding: 0.35rem 1.25rem;
   border-radius: 30px;
@@ -36,7 +36,7 @@
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  box-shadow: 0 4px 12px rgba(52, 145, 129, 0.25);
+  box-shadow: 0 4px 12px rgba(200, 155, 60, 0.25);
   z-index: 1;
 }
 
@@ -50,7 +50,7 @@
 
 .pricing-desc {
   font-size: 0.9rem;
-  color: #64748b;
+  color: #5C5C5C;
   text-align: center;
   margin-bottom: 1.5rem;
   line-height: 1.5;
@@ -83,28 +83,12 @@
 }
 
 .feat-icon {
-  color: #349181;
+  color: var(--primary);
   flex-shrink: 0;
   margin-top: 3px;
 }
 
 /* Button Styling */
-.pricing-card .btn {
-  background-color: #349181;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 12px;
-  font-weight: 700;
-  font-size: 1rem;
-  transition: all 0.2s ease;
-  border: 1px solid #349181;
-  width: 100%;
-  text-align: center;
-}
 
-.pricing-card .btn:hover {
-  background-color: #2e7c73;
-  border-color: #2e7c73;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(52, 145, 129, 0.2);
-}
+
+

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Scissors, Sparkles, Heart } from 'lucide-react';
-import groomingHeroImg from '../../image/grooming-1.png';
+import groomingHeroImg from '../../image/grooming_spa.png';
 import './GroomingSecondaryHero.css';
 
 const GroomingSecondaryHero = () => {

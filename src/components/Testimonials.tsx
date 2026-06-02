@@ -6,35 +6,35 @@ const testimonialsData = [
     text: "Dr. Gaur is absolutely wonderful with animals. My Golden Retriever Bruno had a complex orthopaedic surgery and the care we received was exceptional. He's back on his feet now — healthier than ever!",
     name: "Priya Sharma",
     pet: "Bruno (Golden Retriever)",
-    image: "/src/image/bruno.jpg",
+    image: "/src/image/testimonials.png",
     rating: 5
   },
   {
     text: "We've been coming to DD's MaxxPet Clinic for years. Our family's pets have always been treated here. The trust and continuity of care is unmatched.",
     name: "Sunita Kapoor",
     pet: "Bella (Regular Client)",
-    image: "/src/image/bella.jpg",
+    image: "/src/image/testimonials.png",
     rating: 5
   },
   {
     text: "Quick, professional, and so compassionate. When my Labrador had an emergency, DD's MaxxPet Clinic was available immediately. I can't thank Dr. Gaur and his team enough.",
     name: "Arjun Nair",
     pet: "Max (Labrador)",
-    image: "/src/image/max.jpg",
+    image: "/src/image/testimonials.png",
     rating: 5
   },
   {
     text: "The nutrition counselling completely transformed my dog's health. She lost weight, her coat improved, and she's so much more energetic now. Science-backed advice that actually works.",
     name: "Deepika Verma",
     pet: "Coco (Beagle Mix)",
-    image: "/src/image/coco.jpg",
+    image: "/src/image/testimonials.png",
     rating: 5
   },
   {
     text: "DD's MaxxPet Clinic is the only place I trust for my two cats' vaccinations. The team is knowledgeable, the facility is clean, and they always explain everything clearly. 10/10 every time.",
     name: "Kiran Bhat",
     pet: "Luna & Oreo",
-    image: "/src/image/cats.jpg",
+    image: "/src/image/testimonials.png",
     rating: 5
   }
 ];
@@ -125,7 +125,7 @@ const Testimonials = () => {
           <div className="section-pill">
             <span className="dot" /> What Pet Parents Say
           </div>
-          <h2 style={{ color: '#2f8f83' }}>
+          <h2 style={{ color: 'var(--primary)' }}>
             Trusted by <span>Thousands</span> of Pet Parents
           </h2>
           <p style={{ color: 'rgba(255, 255, 255, 0.65)', marginTop: '1rem' }}>
@@ -177,7 +177,7 @@ const Testimonials = () => {
                   <div className="testimonial-author mt-auto">
                     <div className="testimonial-image-container">
                       <img src={t.image} alt={t.pet} className="testimonial-image" onError={(e) => {
-                        (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${t.name}&background=004d4d&color=fff`;
+                        (e.target as HTMLImageElement).src = `https://ui-avatars.com/api/?name=${t.name}&background=C89B3C&color=fff`;
                       }} />
                     </div>
                     <div className="testimonial-info">

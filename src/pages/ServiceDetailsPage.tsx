@@ -48,7 +48,7 @@ const ServiceDetailsPage = () => {
             <Link to="/contact-us" className="btn btn-primary" style={{ background: 'white', color: 'var(--primary-dark)', fontWeight: 700 }}>
               Book Consultation <ArrowRight size={17} />
             </Link>
-            <a href="tel:+918800756268" className="btn" style={{ background: 'rgba(255,255,255,0.15)', border: '1.5px solid rgba(255,255,255,0.5)', color: 'white' }}>
+            <a href="tel:+918800756268" className="btn btn-primary" style={{ background: 'rgba(255,255,255,0.15)', border: '1.5px solid rgba(255,255,255,0.5)', color: 'white' }}>
               <Phone size={16} /> Call Now
             </a>
           </div>

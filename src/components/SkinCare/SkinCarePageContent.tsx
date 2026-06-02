@@ -3,8 +3,8 @@ import VaccinationSubHero from '../Vaccination/VaccinationSubHero';
 import PricingCard from '../Shared/PricingCard';
 import CTABanner from '../CTABanner';
 import { ShieldCheck, Droplets, Sparkles } from 'lucide-react';
-import skincareDogImg from '../../image/skin-2.png';
-import skincareCatImg from '../../image/skin-3.png';
+import skincareDogImg from '../../image/wellness_exams.png';
+import skincareCatImg from '../../image/wellness_exams.png';
 import '../../pages/GroomingPage.css';
 import './SkinCare.css';
 

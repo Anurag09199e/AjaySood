@@ -1,6 +1,6 @@
 import DoctorProfile from '../components/DoctorProfile';
 import CTABanner from '../components/CTABanner';
-import doctorImg from "../image/pets-perent-2.png";
+import doctorImg from '../image/about_us.png';
 import SEO from '../components/Shared/SEO';
 
 
@@ -15,7 +15,7 @@ const DoctorsPage = () => {
       {/* Page Hero */}
       <section className="inner-page-hero" style={{
         backgroundImage: `
-          linear-gradient(135deg, rgba(129, 167, 172, 0.82) 0%, rgba(60, 73, 71, 0.75) 50%, rgba(61, 74, 71, 0.85) 100%),
+          linear-gradient(135deg, rgba(200, 155, 60, 0.82) 0%, rgba(26, 26, 26, 0.75) 50%, rgba(26, 26, 26, 0.85) 100%),
           url(${doctorImg})
         `,
       }}>

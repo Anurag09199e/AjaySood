@@ -37,7 +37,7 @@ const VaccinationSubHero = ({ titleLine1, titleLine2, image, imageLeft, buttonTe
 
           {description && <p className="vsub-desc">{description}</p>}
 
-          <Link to="/contact-us" className="btn vsub-btn">
+          <Link to="/contact-us" className="btn btn-primary vsub-btn">
             {buttonText}
           </Link>
 

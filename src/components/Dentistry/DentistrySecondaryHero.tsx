@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ClipboardList, Stethoscope, BriefcaseMedical } from 'lucide-react';
-import dentalHeroImg from '../../image/Dental.webp';
+import dentalHeroImg from '../../image/dental_care.png';
 import './DentistrySecondaryHero.css';
 
 const DentistrySecondaryHero = () => {
@@ -21,7 +21,7 @@ const DentistrySecondaryHero = () => {
             <span className="dsh-title-green">Pets dental clinic in Faridabad</span>
           </h1>
           <p className='text-bold'>As a leading pets dental clinic in Faridabad, we provide complete oral care to keep your pet's teeth strong, gums healthy, and breath fresh</p><br />
-          <Link to="/contact-us" className="btn dsh-btn">
+          <Link to="/contact-us" className="btn btn-primary dsh-btn">
             Book Appointment
           </Link>
 

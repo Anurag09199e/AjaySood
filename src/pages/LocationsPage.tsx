@@ -15,7 +15,7 @@ const LocationsPage = () => {
       {/* Page Hero */}
       <section className="inner-page-hero" style={{
         backgroundImage: `
-          linear-gradient(135deg, rgba(6,44,36,0.80) 0%, rgba(13,89,73,0.70) 60%, rgba(6,50,40,0.85) 100%),
+          linear-gradient(135deg, rgba(26, 26, 26,0.80) 0%, rgba(200, 155, 60,0.70) 60%, rgba(26, 26, 26,0.85) 100%),
           url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1920&q=80')
         `,
       }}>

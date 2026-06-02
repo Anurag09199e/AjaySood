@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ClipboardList, Stethoscope, BriefcaseMedical } from 'lucide-react';
-import parentingHeroImg from '../../image/pets-perent-3.png';
+import parentingHeroImg from '../../image/pet_nutrition.png';
 import './ParentingSecondaryHero.css';
 
 const ParentingSecondaryHero = () => {
@@ -20,7 +20,7 @@ const ParentingSecondaryHero = () => {
             <span className="prsh-title-green">Pets Parenting Counselling in Faridabad</span>
           </h1>
           <p className='text-bold'>Expert guidance to help you build a loving, structured bond with your pet — from potty training to behavioral counselling and socialization</p><br />
-          <Link to="/contact-us" className="btn prsh-btn">
+          <Link to="/contact-us" className="btn btn-primary prsh-btn">
             Book Appointment
           </Link>
 

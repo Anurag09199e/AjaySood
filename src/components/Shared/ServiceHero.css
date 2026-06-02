@@ -64,7 +64,7 @@
 }
 
 .service-hero-title-pink {
-  color: #349181;
+  color: var(--primary);
 }
 
 .service-hero-title-dark {
@@ -94,7 +94,7 @@
 }
 
 .service-hero-btn {
-  background-color: #349181;
+  background-color: var(--primary);
   color: #fff;
   padding: 0.8rem 2rem;
   border-radius: 8px;
@@ -106,7 +106,7 @@
 }
 
 .service-hero-btn:hover {
-  background-color: #2e7c73;
+  background-color: var(--primary);
   color: #fff;
   transform: translateY(-2px);
 }

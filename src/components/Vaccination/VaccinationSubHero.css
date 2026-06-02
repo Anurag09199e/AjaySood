@@ -53,7 +53,7 @@
 }
 
 .vsub-title-pink {
-  color: #349181;
+  color: var(--primary);
 }
 
 .vsub-title-dark {
@@ -69,8 +69,8 @@
 }
 
 .vsub-btn {
-  background-color: #349181;
-  color: #fff;
+  
+  
   padding: 0.8rem 2rem;
   border-radius: 50px;
   font-weight: 600;
@@ -80,9 +80,9 @@
   transition: all 0.3s ease;
 }
 
-.vsub-btn:hover {
-  background-color: #2e7c73;
-  color: #fff;
+.vsub-btn {
+  
+  
   transform: translateY(-2px);
 }
 

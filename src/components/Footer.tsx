@@ -1,6 +1,5 @@
 import { Instagram, Facebook, MapPin, Phone, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logoImg from '../assets/maxxpet-logo.JPG';
 
 const Footer = () => {
   return (
@@ -11,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src={logoImg} alt="DD's MaxxPet Clinic Logo" style={{ height: '40px', width: 'auto' }} />
+              <img src="/logo.png" alt="DD's MaxxPet Clinic Logo" style={{ height: '40px', width: 'auto' }} />
             </div>
             <p>
               Your trusted partner in pet health. We provide expert veterinary care with compassion and dedication in Faridabad.

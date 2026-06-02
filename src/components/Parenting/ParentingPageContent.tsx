@@ -3,7 +3,7 @@ import VaccinationSubHero from '../Vaccination/VaccinationSubHero';
 import PricingCard from '../Shared/PricingCard';
 import CTABanner from '../CTABanner';
 import { ClipboardList, Stethoscope, BriefcaseMedical } from 'lucide-react';
-import parentingImg from '../../image/pets-perent-2.png';
+import parentingImg from '../../image/pet_nutrition.png';
 import '../../pages/GroomingPage.css';
 import './Parenting.css';
 

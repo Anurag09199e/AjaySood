@@ -2,7 +2,7 @@ import { Stethoscope } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Services from '../components/Services';
 import CTABanner from '../components/CTABanner';
-import doctorImg from "../image/pets-perent-1.png";
+import doctorImg from '../image/hero_section.png';
 import SEO from '../components/Shared/SEO';
 
 const ServicesPage = () => {
@@ -16,7 +16,7 @@ const ServicesPage = () => {
       {/* Page Hero */}
       <section className="inner-page-hero" style={{
         backgroundImage: `
-          linear-gradient(135deg, rgba(129, 167, 172, 0.82) 0%, rgba(13,89,73,0.75) 50%, rgba(61, 74, 71, 0.85) 100%),
+          linear-gradient(135deg, rgba(200, 155, 60, 0.82) 0%, rgba(200, 155, 60,0.75) 50%, rgba(26, 26, 26, 0.85) 100%),
           url(${doctorImg})
         `,
       }}>

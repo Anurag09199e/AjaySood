@@ -64,7 +64,7 @@
 }
 
 .grsh-title-pink {
-  color: #349181;
+  color: var(--primary);
 }
 
 .grsh-title-dark {
@@ -78,7 +78,7 @@
 }
 
 .grsh-btn {
-  background-color: #349181;
+  background-color: var(--primary);
   color: #fff;
   padding: 0.8rem 2rem;
   border-radius: 8px;
@@ -90,7 +90,7 @@
 }
 
 .grsh-btn:hover {
-  background-color: #2e7c73;
+  background-color: var(--primary);
   color: #fff;
   transform: translateY(-2px);
 }
@@ -124,7 +124,7 @@
 
 .grsh-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(52, 145, 129, 0.1);
+  box-shadow: 0 8px 25px rgba(200, 155, 60, 0.1);
 }
 
 .grsh-card-icon {

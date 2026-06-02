@@ -3,8 +3,8 @@ import ServiceSubHero from '../Shared/ServiceSubHero';
 import PricingCard from '../Shared/PricingCard';
 import CTABanner from '../CTABanner';
 import { Activity, Thermometer, ShieldCheck, HeartPulse, Microscope, HeartHandshake } from 'lucide-react';
-import surgeryHeroImg from '../../image/surgery-1.png';
-import surgeryAddImg from '../../image/surgery-2.png';
+import surgeryHeroImg from '../../image/surgery.png';
+import surgeryAddImg from '../../image/surgery.png';
 import '../../pages/GroomingPage.css';
 import '../Vaccination/Vaccination.css';
 

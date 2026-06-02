@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
-import doctorImg from "../image/doctor.jpeg";
+import doctorImg from '../image/about_us.png';
 
 const About = () => {
   return (

@@ -3,8 +3,8 @@ import VaccinationSubHero from './VaccinationSubHero';
 import PricingCard from '../Shared/PricingCard';
 import CTABanner from '../CTABanner';
 import { ClipboardList, Stethoscope, BriefcaseMedical } from 'lucide-react';
-import vetWithDogImg from '../../image/vaccination-2.png';
-import vetWithCatImg from '../../image/vaccination-3.png';
+import vetWithDogImg from '../../image/vaccination.png';
+import vetWithCatImg from '../../image/vaccination.png';
 import '../../pages/GroomingPage.css';
 import './Vaccination.css';
 

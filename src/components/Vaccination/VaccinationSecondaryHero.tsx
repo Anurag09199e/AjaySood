@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ClipboardList, Stethoscope, BriefcaseMedical } from 'lucide-react';
-import vetWithDogImg from '../../image/vaccination-1.png';
+import vetWithDogImg from '../../image/vaccination.png';
 import './VaccinationSecondaryHero.css';
 
 const VaccinationSecondaryHero = () => {
@@ -21,7 +21,7 @@ const VaccinationSecondaryHero = () => {
             <span className="vsh-title-pink">Pets vaccination in Faridabad</span>
           </h1>
           <p className='text-bold'>As a best pets vaccination clinic in Faridabad, our goal is to provide preventive care that ensures your pets stay protected throughout their lives</p><br />
-          <Link to="/contact-us" className="btn vsh-btn">
+          <Link to="/contact-us" className="btn btn-primary vsh-btn">
             Book Appointment
           </Link>
 

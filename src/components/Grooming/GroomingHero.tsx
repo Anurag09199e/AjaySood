@@ -1,11 +1,11 @@
 
 import { Scissors, Sparkles, Heart } from 'lucide-react';
-import groomingHeroImg from '../../image/grooming-1.png';
+import groomingHeroImg from '../../image/grooming_spa.png';
 
 const GroomingHero = () => {
   return (
     <section className="inner-page-hero grooming-hero-wrapper" style={{
-      backgroundImage: `linear-gradient(135deg, rgba(6, 44, 36, 0.85) 0%, rgba(13, 89, 73, 0.78) 50%, rgba(6, 44, 36, 0.88) 100%), url(${groomingHeroImg})`
+      backgroundImage: `linear-gradient(135deg, rgba(26, 26, 26, 0.85) 0%, rgba(200, 155, 60, 0.78) 50%, rgba(26, 26, 26, 0.88) 100%), url(${groomingHeroImg})`
     }}>
       <div className="inner-hero-pattern" />
       <div className="container inner-hero-content animate-fade-in">
@@ -24,21 +24,21 @@ const GroomingHero = () => {
 
         <div className="grooming-hero-features animate-fade-in delay-200">
           <div className="grooming-feature-card">
-            <div className="icon-box icon-box-teal mb-4 mx-auto" style={{ width: '48px', height: '48px' }}>
+            <div className="icon-box icon-box-gold mb-4 mx-auto" style={{ width: '48px', height: '48px' }}>
               <Scissors size={24} />
             </div>
             <h4>Expert Styling</h4>
             <p className="text-muted" style={{ fontSize: '0.85rem' }}>Breed-specific cuts & styling</p>
           </div>
           <div className="grooming-feature-card">
-            <div className="icon-box icon-box-teal mb-4 mx-auto" style={{ width: '48px', height: '48px' }}>
+            <div className="icon-box icon-box-gold mb-4 mx-auto" style={{ width: '48px', height: '48px' }}>
               <Sparkles size={24} />
             </div>
             <h4>Hygienic Baths</h4>
             <p className="text-muted" style={{ fontSize: '0.85rem' }}>Deep cleansing & flea control</p>
           </div>
           <div className="grooming-feature-card">
-            <div className="icon-box icon-box-teal mb-4 mx-auto" style={{ width: '48px', height: '48px' }}>
+            <div className="icon-box icon-box-gold mb-4 mx-auto" style={{ width: '48px', height: '48px' }}>
               <Heart size={24} />
             </div>
             <h4>Gentle Care</h4>
