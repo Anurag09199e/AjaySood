@@ -53,7 +53,7 @@ const ParentingPageContent = () => {
       <VaccinationSubHero
         titleLine1="Dog Parenting Counselling"
         titleLine2=""
-        description="Bringing a puppy home is thrilling, but behavioral problems are driven by misunderstandings between pets and owners. Our counselling covers potty training, socialisation, reading body language, separation anxiety, and aggression management."
+        description="Raise a happy, healthy, and well-behaved dog with expert guidance. Our Dog Parenting Counselling service helps pet parents understand their dog's behavior, nutrition, training needs, socialization, and overall well-being. Whether you are a first-time dog owner or facing behavioral challenges, our experts provide personalized advice to build a strong bond with your furry companion and ensure a fulfilling life together"
         image={parentingImg}
         imageLeft={true}
         buttonText="Book Dog Counselling"
@@ -75,7 +75,7 @@ const ParentingPageContent = () => {
       <VaccinationSubHero
         titleLine1="Cat Parenting Counselling"
         titleLine2=""
-        description="Cats are notoriously independent, but they still need structured guidance. Our feline counselling covers litter training, scratching behaviour, anxiety relief, enrichment strategies, and multi-cat household harmony."
+        description="Our Cat Parenting Counselling service provides expert guidance on nutrition, behavior, grooming, litter training, socialization, and overall cat wellness. Whether you're a first-time cat parent or looking to better understand your cat's needs, our veterinary experts offer personalized advice to ensure a strong bond and a stress-free life for both you and your pet."
         image={parentingImg}
         imageLeft={false}
         buttonText="Book Cat Counselling"

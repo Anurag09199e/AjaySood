@@ -54,7 +54,7 @@ const GroomingPageContent = () => {
       <VaccinationSubHero
         titleLine1="Best Dogs Grooming "
         titleLine2="in Preet Vihar, Delhi"
-        description="Our dog grooming service includes a full range of treatments to keep your pup looking and feeling great. From professional haircuts and breed-specific styling to gentle baths, we handle your pet with the utmost care."
+        description="Give your dog the care they deserve with our premium grooming services. From refreshing baths and coat trimming to nail clipping and ear cleaning, our experienced groomers ensure your pet stays clean, healthy, comfortable, and happy."
         image={dogGroomingImg}
         imageLeft={true}
         buttonText="Book Dog Grooming"
@@ -76,7 +76,7 @@ const GroomingPageContent = () => {
       <VaccinationSubHero
         titleLine1="Best Cats Grooming"
         titleLine2="in Preet Vihar, Delhi"
-        description="Grooming is essential for feline health. Our cat grooming service features stress-free handling and gentle techniques, ensuring your cat leaves our salon feeling relaxed, revitalized, and perfectly clean."
+        description="Keep your feline friend clean, healthy, and comfortable with our professional cat grooming services. We provide brushing, bathing, nail trimming, ear cleaning, and coat care tailored to your cat's needs."
         image={catGroomingImg}
         imageLeft={false}
         buttonText="Book Cat Grooming"

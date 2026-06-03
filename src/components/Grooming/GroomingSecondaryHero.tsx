@@ -21,7 +21,7 @@ const GroomingSecondaryHero = () => {
             <span className="grsh-title-pink">Pet Grooming in Preet Vihar, Delhi is More Than Just Styling</span>
           </h1>
 
-          <p className='text-bold'>At Dog & Cat Clinic , we believe that grooming is an essential part of your pet's overall health and well-being. Our professional grooming services go beyond simple haircuts — we provide comprehensive care that keeps your pet clean, comfortable, and happy.</p><br />
+          <p className='text-bold'>Pamper your furry companion with our premium grooming and spa services. From refreshing baths and stylish trims to nail care and skin treatments, we ensure your pet enjoys a safe, relaxing, and enjoyable grooming experience. 🐾✨</p><br />
           <Link to="/contact-us" className="btn grsh-btn">
             Book Grooming Service
           </Link>

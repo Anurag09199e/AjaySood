@@ -54,7 +54,7 @@ const VaccinationPageContent = () => {
       <VaccinationSubHero
         titleLine1="Dog Vaccination "
         titleLine2="in Preet Vihar, Delhi"
-        description="Dog vaccinations are the cornerstone of preventative healthcare, shielding your dog from highly contagious and potentially fatal diseases like Parvovirus and Rabies."
+        description="Protect your dog from serious and preventable diseases with our comprehensive vaccination services. Regular vaccinations help strengthen your pet's immune system and provide long-term protection against infections such as Rabies, Parvovirus, Distemper, Hepatitis, and Leptospirosis."
         image={vetWithDogImg}
         imageLeft={true}
         buttonText="Book Dog Vaccination"
@@ -76,7 +76,7 @@ const VaccinationPageContent = () => {
       <VaccinationSubHero
         titleLine1="Cats Vaccination "
         titleLine2="in Preet Vihar, Delhi"
-        description="Cats require specialized vaccinations to prevent serious feline diseases like Panleukopenia and Feline Leukemia. Our protocols ensure your cat is fully protected throughout all life stages."
+        description="Protect your feline companion with our comprehensive vaccination program. Regular vaccinations help prevent serious and potentially life-threatening diseases, ensuring your cat stays healthy and active throughout every stage of life."
         image={vetWithCatImg}
         imageLeft={false}
         buttonText="Book Cat Vaccination"

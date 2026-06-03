@@ -54,7 +54,8 @@ const DentistryPageContent = () => {
       <VaccinationSubHero
         titleLine1="Dogs Dentistry "
         titleLine2="in Preet Vihar, Delhi"
-        description="Bad breath, plaque build-up, and gum disease are common in dogs. Our professional dental cleanings, ultrasonic scaling, and safe extractions keep your dog's teeth strong and pain-free."
+        description="Dog Dentistry Services
+Keep your dog's teeth healthy and clean with professional dental care. We provide dental checkups, teeth cleaning, plaque and tartar removal, gum disease treatment, and oral health guidance to ensure a healthy smile and overall well-being."
         image={dentalDogImg}
         imageLeft={true}
         buttonText="Book Dog Dental Care"
@@ -76,7 +77,7 @@ const DentistryPageContent = () => {
       <VaccinationSubHero
         titleLine1="Cats Dentistry"
         titleLine2="in Preet Vihar, Delhi"
-        description="Cats are prone to resorptive lesions and gingivitis that can go unnoticed. Our gentle feline dental protocols include thorough exams, safe anaesthesia-based cleanings, and pain-free extractions to keep your cat's oral health in top condition."
+        description="Good oral health is essential for your cat’s overall well-being. Our dental services include routine examinations, professional teeth cleaning, tartar removal, gum disease treatment, and preventive care to help your feline companion maintain strong teeth and healthy gums."
         image={dentalCatImg}
         imageLeft={false}
         buttonText="Book Cat Dental Care"

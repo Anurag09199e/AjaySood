@@ -20,7 +20,7 @@ const VaccinationSecondaryHero = () => {
           <h1 className="vsh-title">
             <span className="vsh-title-pink">Pets vaccination in Preet Vihar, Delhi</span>
           </h1>
-          <p className='text-bold'>As a best pets vaccination clinic in Preet Vihar, Delhi, our goal is to provide preventive care that ensures your pets stay protected throughout their lives</p><br />
+          <p className='text-bold'>Keep your pets protected with timely vaccinations. Our expert veterinarians provide customized vaccine plans to safeguard your pet from common and life-threatening diseases.</p><br />
           <Link to="/contact-us" className="btn btn-primary vsh-btn">
             Book Appointment
           </Link>

@@ -31,8 +31,9 @@ const VaccinationSubHero = ({ titleLine1, titleLine2, image, imageLeft, buttonTe
         <div className="vsub-text-col animate-fade-in">
           
           <h2 className="vsub-title">
-            <span className="vsub-title-pink">{titleLine1}</span><br />
-            <span className="vsub-title-dark">{titleLine2}</span>
+            <span className="vsub-title-pink">{titleLine1}</span>
+            {titleLine2 && <br />}
+            {titleLine2 && <span className="vsub-title-dark">{titleLine2}</span>}
           </h2>
 
           {description && <p className="vsub-desc">{description}</p>}

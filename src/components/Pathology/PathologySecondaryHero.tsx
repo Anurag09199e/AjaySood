@@ -19,7 +19,7 @@ const PathologySecondaryHero = () => {
           <h1 className="psh-title">
             <span className="psh-title-green">Pets Pathological Laboratory in Preet Vihar, Delhi</span>
           </h1>
-          <p className='text-bold'>Advanced in-house diagnostics for fast, accurate results — helping us detect and treat health issues before they become serious</p><br />
+          <p className='text-bold'>Advanced diagnostic services for dogs and cats, including blood tests, imaging, and health screenings to detect illnesses early and ensure accurate treatment for your pet's well-being.</p><br />
           <Link to="/contact-us" className="btn btn-primary psh-btn">
             Book Appointment
           </Link>

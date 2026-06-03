@@ -21,7 +21,7 @@ const SkinCareSecondaryHero = () => {
             <span className="scsh-title-pink">Pets Skin Care</span>
             <span className="scsh-title-dark"> in Preet Vihar, Delhi</span>
           </h1>
-          <p className='text-bold'>Skin problems are common in pets, but they can cause significant discomfort and affect their quality of life. At Dog & Cat Clinic , we provide comprehensive dermatological care to diagnose and treat skin conditions effectively.</p><br />
+          <p className='text-bold'> Keep your pets healthy and comfortable with expert skin care treatments. We diagnose and treat allergies, itching, infections, rashes, dry skin, hair loss, and other dermatological conditions for dogs and cats.</p><br />
           <Link to="/contact-us" className="btn btn-primary scsh-btn">
             Book Skin Care Service
           </Link>

@@ -53,7 +53,7 @@ const PathologyPageContent = () => {
       <VaccinationSubHero
         titleLine1="Dogs Pathology"
         titleLine2="in Preet Vihar, Delhi"
-        description="In critical care, time is of the essence. Our modern in-house lab performs blood chemistry, complete blood counts (CBC), and urinalysis within minutes — giving your dog the fastest path to accurate diagnosis and treatment."
+        description="Our advanced diagnostic services help detect health issues early in dogs and cats. Using modern laboratory testing, digital imaging, and health screenings, we provide accurate diagnoses for effective treatment and better pet wellness."
         image={pathologyImg}
         imageLeft={true}
         buttonText="Book Dog Lab Test"
@@ -75,7 +75,7 @@ const PathologyPageContent = () => {
       <VaccinationSubHero
         titleLine1="Cats Pathology"
         titleLine2="in Preet Vihar, Delhi"
-        description="Routine lab work helps us understand your cat's normal baseline and notice minor unhealthy shifts before symptoms appear — ensuring longevity and quality of life for your feline companion."
+        description="We provide advanced veterinary diagnostics, including blood tests, X-rays, and health screenings, helping diagnose diseases early and keep your pets healthy and happy."
         image={pathologyImg}
         imageLeft={false}
         buttonText="Book Cat Lab Test"

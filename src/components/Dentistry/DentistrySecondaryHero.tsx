@@ -20,7 +20,7 @@ const DentistrySecondaryHero = () => {
           <h1 className="dsh-title">
             <span className="dsh-title-green">Pets dental clinic in Faridabad</span>
           </h1>
-          <p className='text-bold'>As a leading pets dental clinic in Faridabad, we provide complete oral care to keep your pet's teeth strong, gums healthy, and breath fresh</p><br />
+          <p className='text-bold'>Keep your pet's teeth healthy and breath fresh with professional dental care. We provide dental checkups, teeth cleaning, plaque removal, and oral health treatments to prevent dental diseases and ensure your pet's overall well-being.</p><br />
           <Link to="/contact-us" className="btn btn-primary dsh-btn">
             Book Appointment
           </Link>

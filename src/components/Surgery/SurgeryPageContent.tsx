@@ -34,7 +34,7 @@ const SurgeryPageContent = () => {
       <ServiceHero
         titleLine1="Advanced Pet Surgery Care"
         titleLine2=""
-        description="Expert surgical procedures with modern facilities and gentle recovery protocols."
+        description="We offer comprehensive surgical solutions for dogs, cats, and other pets. Our clinic follows strict safety protocols, advanced anesthesia monitoring, and compassionate post-operative care to help your pet heal quickly and comfortably."
         backgroundImage={surgeryHeroImg}
         features={[
           { icon: <Activity size={22} color="#1a1a1a" />, title: "Modern Operation<br/>Theatres" },
@@ -44,9 +44,9 @@ const SurgeryPageContent = () => {
       />
 
       <ServiceSubHero
-        titleLine1="Expert Pet Surgery Clinic"
+        titleLine1="Best Dog Surgery Clinic"
         titleLine2="in Preet Vihar, Delhi"
-        description="oful. sncy interventions, trust our experienced surgeons."
+        description="Our experienced veterinary team provides safe and advanced surgical care for dogs, including soft tissue surgeries, tumor removal, wound repair, and emergency procedures. We prioritize your pet's comfort, safety, and speedy recovery."
         image={surgeryHeroImg}
         imageLeft={true}
         buttonText="Consult Our Surgeon"
@@ -69,7 +69,7 @@ const SurgeryPageContent = () => {
       <ServiceSubHero
         titleLine1="Best cats surgery"
         titleLine2="in Preet Vihar, Delhi"
-        description="pled with scheduled pain remedies, ensuring maximum comfort once your pet comes back home to rest."
+        description="Professional feline surgical care including spaying, neutering, tumor removal, wound repair, and emergency procedures with a focus on safety, comfort, and recovery."
         image={surgeryAddImg}
         imageLeft={false}
         buttonText="Post-Op Emergency"

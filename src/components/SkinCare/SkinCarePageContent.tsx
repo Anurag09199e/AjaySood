@@ -54,7 +54,7 @@ const SkinCarePageContent = () => {
       <VaccinationSubHero
         titleLine1="Complete Protection"
         titleLine2="Dog Skin Care"
-        description="Skin conditions in dogs can range from allergies and infections to tick infestations and coat deterioration. Our expert dermatology team provides targeted treatments to restore your dog's skin health and comfort."
+        description="Healthy skin is essential for your dog's overall well-being. Our veterinary team provides comprehensive skin care services, including diagnosis and treatment of allergies, bacterial and fungal infections, hot spots, dry skin, excessive shedding, and itching. We create personalized treatment plans to help your pet maintain healthy skin and a shiny coat."
         image={skincareDogImg}
         imageLeft={true}
         buttonText="Book Dog Skin Care"
@@ -76,7 +76,7 @@ const SkinCarePageContent = () => {
       <VaccinationSubHero
         titleLine1="Cats Skin Care"
         titleLine2="in Preet Vihar, Delhi"
-        description="Cats are prone to sensitive skin, fungal infections, and stress-induced dermatitis. Our gentle, specialized feline skin care protocols ensure your cat's coat stays lustrous and irritation-free throughout all life stages."
+        description=" Expert cat skin care services for allergies, itching, infections, hair loss, and coat health. We provide personalized treatments to keep your cat’s skin healthy and fur shiny. 🐱✨"
         image={skincareCatImg}
         imageLeft={false}
         buttonText="Book Cat Skin Care"

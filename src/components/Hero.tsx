@@ -38,10 +38,7 @@ const Hero = () => {
             Dog & Cat Clinic <br /><span className="hero-title-accent" style={{ fontSize: 'clamp(1rem, 3vw, 2rem)' }}>Best Pet Clinic in Preet Vihar, Delhi</span>
           </h1>
           <p className="hero-desc">
-            <strong>Dog & Cat Clinic</strong> — fostering compassion and advanced healthcare for pets.<span className="hero-desc-sub">
-              Looking for the <span className="hero-desc-accent">Best Pet Clinic in Preet Vihar, Delhi</span> ? At Dog & Cat Clinic , we provide exceptional veterinary care with a focus on compassion, safety, and advanced treatment. From routine check-ups to specialized care, we ensure your pets stay healthy, happy, and protected at every stage of their life.
-            </span>
-          </p>
+            DOG & CAT CLINIC — Compassionate Care for Every Paw Looking for trusted veterinary care in Preet Vihar, Delhi? At DOG & CAT CLINIC, we provide comprehensive healthcare services for dogs and cats in a safe, friendly, and modern environment. From routine check-ups and vaccinations to advanced diagnostics, surgery, and emergency care, our experienced team is dedicated to keeping your pets healthy, happy, and thriving at every stage of life.</p>
 
           <Link
             to="/contact-us"
