@@ -18,8 +18,8 @@ const CTABanner = () => {
             <Link to="/contact-us" className="btn btn-accent">
               Book Appointment <ArrowRight size={18} />
             </Link>
-            <a href="tel:+918800756268" className="btn btn-ghost">
-              <Phone size={17} /> +91 88007 56268
+            <a href="tel:+919810755225" className="btn btn-ghost">
+              <Phone size={17} /> +919810755225
             </a>
           </div>
         </div>
@@ -28,4 +28,4 @@ const CTABanner = () => {
   );
 };
 
-export default CTABanner;
+export default CTABanner; 

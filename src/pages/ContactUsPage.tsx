@@ -107,7 +107,7 @@ const ContactUsPage = () => {
               <Phone size={24} />
             </div>
             <h4>Call Us</h4>
-            <p><strong>Phone:</strong> 088007 56268</p>
+            <p><strong>Phone:</strong> +91 9810755225</p>
             <p style={{ marginTop: '0.5rem', color: 'var(--primary)', fontWeight: 600, fontSize: '0.82rem' }}>
               Available 10 AM – 8 PM
             </p>
@@ -117,14 +117,14 @@ const ContactUsPage = () => {
               <MapPin size={24} />
             </div>
             <h4>Visit Our Clinic</h4>
-            <p><strong>Dog & Cat Clinic :</strong> Clinic site -3, Main market, Sector 17 Rd, near Dristi eye centre, Preet Vihar, Delhi, Haryana 121002</p>
+            <p><strong>Dog & Cat Clinic :</strong> Clinic site -3, Main market, Sector 17 Rd, near Dristi eye centre, Preet Vihar, Delhi </p>
           </div>
           <div className="contact-info-card-v2">
             <div className="contact-info-icon">
               <Mail size={24} />
             </div>
             <h4>Email Us</h4>
-            <p>contact@maxxpetclinic.com</p>
+            <p>savavet.aj@gmail.com</p>
             <p style={{ marginTop: '0.5rem', color: 'var(--primary)', fontWeight: 600, fontSize: '0.82rem' }}>
               Usually reply within 24 hours
             </p>
@@ -203,11 +203,11 @@ const ContactUsPage = () => {
               <div className="clinic-card-body">
                 <div className="clinic-info-row">
                   <MapPin size={16} className="clinic-info-icon" />
-                  <p>Clinic site -3, Main market, Sector 17 Rd, near Dristi eye centre, Sector 17, Faridabad, Haryana 121002</p>
+                  <p>Clinic site -3, Main market, Sector 17 Rd, near Dristi eye centre, Preet Vihar, Delhi </p>
                 </div>
                 <div className="clinic-info-row">
                   <Phone size={16} className="clinic-info-icon" />
-                  <p>+91 88007 56268</p>
+                  <p>+91 9810755225 </p>
                 </div>
                 <div className="clinic-info-row">
                   <Clock size={16} className="clinic-info-icon" />
@@ -219,8 +219,8 @@ const ContactUsPage = () => {
             <div style={{ background: 'var(--primary-glow)', border: '1px solid var(--border-gold)', borderRadius: 'var(--r-lg)', padding: '1.5rem', textAlign: 'center' }}>
               <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🐾</div>
               <h5 style={{ color: 'var(--primary-dark)', marginBottom: '0.4rem', fontSize: '0.95rem' }}>Need Help? Call Us</h5>
-              <a href="tel:+918800756268" style={{ display: 'block', fontSize: '1.25rem', fontWeight: 800, color: 'var(--primary)', marginTop: '0.5rem' }}>
-                +91 88007 56268
+              <a href="tel:+91 9810755225" style={{ display: 'block', fontSize: '1.25rem', fontWeight: 800, color: 'var(--primary)', marginTop: '0.5rem' }}>
+                +91 9810755225
               </a>
               <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '0.4rem' }}>Available during clinic hours</p>
             </div>

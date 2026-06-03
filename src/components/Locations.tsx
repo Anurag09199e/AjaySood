@@ -4,7 +4,7 @@ const clinics = [
   {
     name: "Dog & Cat Clinic ",
     address: "B/717, Aditya Complex, Preet Vihar, Delhi-110092 ",
-    phone: "088007 56268",
+    phone: "+91 9810755225 ",
     hours: "10 AM – 8 PM, Mon-Sun",
     mapUrl: "https://maps.google.com/?q=Maxx+Pet+Clinic+Faridabad"
   }

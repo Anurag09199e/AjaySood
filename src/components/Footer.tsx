@@ -55,11 +55,11 @@ const Footer = () => {
             <h5>Contact Us</h5>
             <a href="https://maps.google.com/?q=Maxx+Pet+Clinic+Faridabad" target="_blank" rel="noopener noreferrer">
               <MapPin size={16} />
-              Clinic site -3, Main market, Sector 17 Rd, near Dristi eye centre, Sector 17, Faridabad, Haryana 121002
+              B/717, Aditya Complex, Preet Vihar, Delhi-110092
             </a>
-            <a href="tel:+918800756268">
+            <a href="tel:+919810755225">
               <Phone size={16} />
-              +91 88007 56268
+              +919810755225
             </a>
             <a href="#" style={{ cursor: 'default', pointerEvents: 'none' }}>
               <Clock size={16} />

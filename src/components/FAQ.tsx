@@ -4,7 +4,7 @@ import { ChevronDown } from 'lucide-react';
 const faqs = [
   {
     q: "How do I make an appointment at Dog & Cat Clinic ?",
-    a: "You can book an appointment by calling our clinic directly (088007 56268) or by using our Contact form online. We try to accommodate same-day appointments for urgent cases."
+    a: "You can book an appointment by calling our clinic directly (+91 9810755225 ) or by using our Contact form online. We try to accommodate same-day appointments for urgent cases."
   },
   {
     q: "What are your clinic timings?",

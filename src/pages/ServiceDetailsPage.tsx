@@ -83,7 +83,7 @@ const ServiceDetailsPage = () => {
                 Book an Appointment <ArrowRight size={17} />
               </Link>
               <a href="tel:+918800756268" className="btn btn-outline">
-                <Phone size={16} /> +91 88007 56268
+                <Phone size={16} /> +91 9810755225
               </a>
             </div>
           </div>
