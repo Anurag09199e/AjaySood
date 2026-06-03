@@ -3,13 +3,13 @@ import SEO from '../components/Shared/SEO';
 const TermsConditionsPage = () => {
   return (
     <div>
-      <SEO 
-        title="Terms & Conditions | DD's MaxxPet Clinic Faridabad" 
-        description="Terms and conditions for services provided by DD's MaxxPet Clinic."
+      <SEO
+        title="Terms & Conditions | Dog & Cat Clinic  Preet Vihar, Delhi"
+        description="Terms and conditions for services provided by Dog & Cat Clinic ."
         canonical="/terms-and-conditions"
         robots="noindex, nofollow"
       />
-      
+
       <section className="inner-page-hero" style={{ background: 'var(--grad-primary)', padding: '60px 0 40px 0', minHeight: 'unset' }}>
         <div className="container text-center">
           <h1 style={{ color: 'white' }}>Terms & <span>Conditions</span></h1>
@@ -20,7 +20,7 @@ const TermsConditionsPage = () => {
         <div className="container" style={{ maxWidth: '800px' }}>
           <h2 className="mb-4">1. Acceptance of Terms</h2>
           <p className="mb-6">
-            By accessing and using the services of DD's MaxxPet Clinic, you agree to comply with and be bound by the following terms and conditions. These terms govern your use of our website and veterinary services.
+            By accessing and using the services of Dog & Cat Clinic , you agree to comply with and be bound by the following terms and conditions. These terms govern your use of our website and veterinary services.
           </p>
 
           <h2 className="mb-4">2. Veterinary Services</h2>
@@ -40,7 +40,7 @@ const TermsConditionsPage = () => {
 
           <h2 className="mb-4">5. Liability</h2>
           <p className="mb-6">
-            While we take every precaution to ensure the safety and well-being of your pet, veterinary medicine involves inherent risks. By authorizing treatment, you acknowledge these risks and release DD's MaxxPet Clinic and its staff from liability for any unforeseen complications, unless resulting from gross negligence.
+            While we take every precaution to ensure the safety and well-being of your pet, veterinary medicine involves inherent risks. By authorizing treatment, you acknowledge these risks and release Dog & Cat Clinic  and its staff from liability for any unforeseen complications, unless resulting from gross negligence.
           </p>
 
           <p className="text-muted mt-8"><em>Last updated: {new Date().toLocaleDateString()}</em></p>

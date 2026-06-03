@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="container">
         <div className="logo">
           <Link to="/">
-            <img src="/logo.png" alt="DD's MaxxPet Clinic Logo" style={{ height: '50px', width: 'auto' }} />
+            <img src="/logo.png" alt="Dog & Cat Clinic  Logo" style={{ height: '50px', width: 'auto' }} />
           </Link>
         </div>
 

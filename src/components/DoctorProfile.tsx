@@ -1,5 +1,5 @@
 import { Award, ShieldCheck, Microscope, HeartPulse } from 'lucide-react';
-import doctorImg from '../image/about_us.png';
+import doctorImg from '../image/ajaysood.jpg';
 
 const capacities = [
   "Senior Veterinary Consultant & Surgeon",
@@ -30,7 +30,7 @@ const DoctorProfile = () => {
       <div className="container">
         <div className="section-header animate-fade-in">
           <span className="section-subtitle">Lead Veterinarian</span>
-          <h2>Dr. <span className="gradient-text">Dheeraj Gaur</span></h2>
+          <h2>Dr. <span className="gradient-text">Ajay Sood</span></h2>
         </div>
 
         <div className="grid-2" style={{ gap: '4rem', alignItems: 'start' }}>
@@ -39,7 +39,7 @@ const DoctorProfile = () => {
             <div style={{ borderRadius: 'var(--radius-xl)', overflow: 'hidden', boxShadow: 'var(--shadow)', marginBottom: '3rem' }}>
               <img
                 src={doctorImg}
-                alt="Dr. Dheeraj Gaur"
+                alt="Dr. Ajay Sood"
                 style={{ width: '100%', height: '500px', display: 'block' }}
               />
             </div>
@@ -75,11 +75,11 @@ const DoctorProfile = () => {
 
           {/* Right Column - Detailed Profile */}
           <div className="animate-fade-in delay-200">
-            <h3 style={{ color: 'var(--secondary)', marginBottom: '1rem', fontSize: '1.8rem' }}>About Dr. Dheeraj Gaur</h3>
+            <h3 style={{ color: 'var(--secondary)', marginBottom: '1rem', fontSize: '1.8rem' }}>About Dr. Ajay Sood</h3>
             <p className="mb-4 text-muted" style={{ fontSize: '1.05rem' }}>
               Dr. Dhiraj Gaur (BVSc & AH) graduated from HAU, Hisar (HR) in the year 2012. He worked with Friendicoes-SECA (Delhi) for about 6m where got basic small animal experience.
               Dr. Dhiraj worked with Max Petz (formerly MaxVets) Hospital-Delhi for about 9.5 yrs where he expertized in different diagnostics skill, procedures and critical care. During this tenure, he did advance training in derma, gastrointestinal diseases and soft tissue surgery from Madras-Vet. University, Chennai.
-              Now his experience, skill & dedication benefiting pet lovers & owners of Faridabad for last 5 yrs.
+              Now his experience, skill & dedication benefiting pet lovers & owners of Preet Vihar, Delhi for last 5 yrs.
             </p>
 
             <h4 style={{ color: 'var(--secondary)', marginTop: '2.5rem', marginBottom: '1.2rem' }}>Problems & Medical Cases Expertly Handled</h4>

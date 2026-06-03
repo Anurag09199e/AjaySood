@@ -19,7 +19,7 @@ const Gallery = () => {
             <span className="dot" /> Gallery
           </div>
           <h2>Happy Pets, <span className="gradient-text">Happy Families</span></h2>
-          <p className="text-muted mt-4">A glimpse into the lives we touch every day at DD's MaxxPet Clinic.</p>
+          <p className="text-muted mt-4">A glimpse into the lives we touch every day at Dog & Cat Clinic .</p>
         </div>
 
         <div className="gallery-grid">

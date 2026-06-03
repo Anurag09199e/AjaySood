@@ -19,9 +19,9 @@ const SkinCareSecondaryHero = () => {
 
           <h1 className="scsh-title">
             <span className="scsh-title-pink">Pets Skin Care</span>
-            <span className="scsh-title-dark"> in Faridabad</span>
+            <span className="scsh-title-dark"> in Preet Vihar, Delhi</span>
           </h1>
-          <p className='text-bold'>Skin problems are common in pets, but they can cause significant discomfort and affect their quality of life. At DD's MaxxPet Clinic, we provide comprehensive dermatological care to diagnose and treat skin conditions effectively.</p><br />
+          <p className='text-bold'>Skin problems are common in pets, but they can cause significant discomfort and affect their quality of life. At Dog & Cat Clinic , we provide comprehensive dermatological care to diagnose and treat skin conditions effectively.</p><br />
           <Link to="/contact-us" className="btn btn-primary scsh-btn">
             Book Skin Care Service
           </Link>

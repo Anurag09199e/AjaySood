@@ -3,13 +3,13 @@ import SEO from '../components/Shared/SEO';
 const PrivacyPolicyPage = () => {
   return (
     <div>
-      <SEO 
-        title="Privacy Policy | DD's MaxxPet Clinic Faridabad" 
-        description="Privacy policy and data protection guidelines for DD's MaxxPet Clinic."
+      <SEO
+        title="Privacy Policy | Dog & Cat Clinic  Preet Vihar, Delhi"
+        description="Privacy policy and data protection guidelines for Dog & Cat Clinic "
         canonical="/privacy-policy"
         robots="noindex, nofollow"
       />
-      
+
       <section className="inner-page-hero" style={{ background: 'var(--grad-primary)', padding: '60px 0 40px 0', minHeight: 'unset' }}>
         <div className="container text-center">
           <h1 style={{ color: 'white' }}>Privacy <span>Policy</span></h1>
@@ -20,7 +20,7 @@ const PrivacyPolicyPage = () => {
         <div className="container" style={{ maxWidth: '800px' }}>
           <h2 className="mb-4">1. Introduction</h2>
           <p className="mb-6">
-            Welcome to DD's MaxxPet Clinic. At our clinic, we are committed to protecting the privacy and security of our clients and their pets. This Privacy Policy outlines how we collect, use, and safeguard your personal information when you use our website, services, and interact with us.
+            Welcome to Dog & Cat Clinic . At our clinic, we are committed to protecting the privacy and security of our clients and their pets. This Privacy Policy outlines how we collect, use, and safeguard your personal information when you use our website, services, and interact with us.
           </p>
 
           <h2 className="mb-4">2. Information We Collect</h2>
@@ -42,7 +42,7 @@ const PrivacyPolicyPage = () => {
           <p className="mb-6">
             If you have any questions or concerns regarding this Privacy Policy or how we handle your personal data, please contact us at our clinic or via the contact methods provided on our website.
           </p>
-          
+
           <p className="text-muted mt-8"><em>Last updated: {new Date().toLocaleDateString()}</em></p>
         </div>
       </section>

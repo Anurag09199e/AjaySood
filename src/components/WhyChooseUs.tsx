@@ -34,9 +34,9 @@ const WhyChooseUs = () => {
             <div className="section-pill mb-6">
               <span className="dot" /> Quality Care
             </div>
-            <h2 className="mb-4">Why <span className="gradient-text">Choose DD's MaxxPet Clinic?</span></h2>
+            <h2 className="mb-4">Why <span className="gradient-text">Choose Dog & Cat Clinic ?</span></h2>
             <p className="text-muted mb-8" style={{ fontSize: '1.05rem', lineHeight: '1.8' }}>
-              At DD's MaxxPet Clinic, we combine decades of expertise, passionate professionals, and genuine love for animals to deliver an experience that consistently exceeds expectations.
+              At Dog & Cat Clinic , we combine decades of expertise, passionate professionals, and genuine love for animals to deliver an experience that consistently exceeds expectations.
             </p>
 
             <div className="whychoose-points">

@@ -11,9 +11,9 @@ import SEO from '../components/Shared/SEO';
 const Home = () => {
   return (
     <>
-      <SEO 
-        title="DD's MaxxPet Clinic | Best Pet Clinic in Faridabad" 
-        description="DD's MaxxPet Clinic in Faridabad offers expert veterinary care, including vaccination, grooming, surgery, and pathology. Book an appointment today for your pet."
+      <SEO
+        title="Dog & Cat Clinic  | Best Pet Clinic in Preet Vihar, Delhi"
+        description="Dog & Cat Clinic  in Preet Vihar, Delhi offers expert veterinary care, including vaccination, grooming, surgery, and pathology. Book an appointment today for your pet."
         canonical="/"
       />
       <Hero />

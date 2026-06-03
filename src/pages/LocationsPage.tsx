@@ -7,9 +7,9 @@ import SEO from '../components/Shared/SEO';
 const LocationsPage = () => {
   return (
     <div>
-      <SEO 
-        title="Our Clinic Location | DD's MaxxPet Clinic Sector 17 Faridabad" 
-        description="Visit DD's MaxxPet Clinic in the heart of Faridabad. Find our clinic location in Sector 17, check our operating hours, and get directions for your next visit."
+      <SEO
+        title="Our Clinic Location | Dog & Cat Clinic  Preet Vihar, Delhi"
+        description="Visit Dog & Cat Clinic  in the heart of Preet Vihar, Delhi. Find our clinic location in Preet Vihar, check our operating hours, and get directions for your next visit."
         canonical="/locations"
       />
       {/* Page Hero */}
@@ -36,7 +36,7 @@ const LocationsPage = () => {
             Our Clinic <span>Location</span>
           </h1>
           <p className="inner-hero-subtitle">
-            A conveniently located clinic in the heart of Faridabad,<br />
+            A conveniently located clinic in the heart of Preet Vihar, Delhi,<br />
             ready to serve you and your beloved pet.
           </p>
 
@@ -47,8 +47,8 @@ const LocationsPage = () => {
             </div>
             <div className="inner-hero-stat-divider" />
             <div className="inner-hero-stat">
-              <strong>Sector 17</strong>
-              <span>Faridabad</span>
+              <strong>Preet Vihar</strong>
+              <span>Preet Vihar, Delhi</span>
             </div>
             <div className="inner-hero-stat-divider" />
             <div className="inner-hero-stat">

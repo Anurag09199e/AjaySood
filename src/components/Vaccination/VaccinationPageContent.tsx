@@ -53,7 +53,7 @@ const VaccinationPageContent = () => {
 
       <VaccinationSubHero
         titleLine1="Dog Vaccination "
-        titleLine2="in Faridabad"
+        titleLine2="in Preet Vihar, Delhi"
         description="Dog vaccinations are the cornerstone of preventative healthcare, shielding your dog from highly contagious and potentially fatal diseases like Parvovirus and Rabies."
         image={vetWithDogImg}
         imageLeft={true}
@@ -75,7 +75,7 @@ const VaccinationPageContent = () => {
 
       <VaccinationSubHero
         titleLine1="Cats Vaccination "
-        titleLine2="in Faridabad"
+        titleLine2="in Preet Vihar, Delhi"
         description="Cats require specialized vaccinations to prevent serious feline diseases like Panleukopenia and Feline Leukemia. Our protocols ensure your cat is fully protected throughout all life stages."
         image={vetWithCatImg}
         imageLeft={false}

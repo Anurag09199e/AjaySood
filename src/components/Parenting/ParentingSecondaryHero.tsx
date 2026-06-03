@@ -17,7 +17,7 @@ const ParentingSecondaryHero = () => {
         <div className="prsh-content-wrapper animate-fade-in">
 
           <h1 className="prsh-title">
-            <span className="prsh-title-green">Pets Parenting Counselling in Faridabad</span>
+            <span className="prsh-title-green">Pets Parenting Counselling in Preet Vihar, Delhi</span>
           </h1>
           <p className='text-bold'>Expert guidance to help you build a loving, structured bond with your pet — from potty training to behavioral counselling and socialization</p><br />
           <Link to="/contact-us" className="btn btn-primary prsh-btn">

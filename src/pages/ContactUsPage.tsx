@@ -51,9 +51,9 @@ const ContactUsPage = () => {
 
   return (
     <div className="contact-page animate-fade-in">
-      <SEO 
-        title="Contact Us | DD's MaxxPet Clinic Sector 17 Faridabad" 
-        description="Contact DD's MaxxPet Clinic in Faridabad today. Book an appointment, ask our experts a question, or find our phone number and address for any pet emergency."
+      <SEO
+        title="Contact Us | Dog & Cat Clinic Preet Vihar, Delhi"
+        description="Contact Dog & Cat Clinic in Preet Vihar, Delhi today. Book an appointment, ask our experts a question, or find our phone number and address for any pet emergency."
         canonical="/contact-us"
       />
       {/* Hero */}
@@ -117,7 +117,7 @@ const ContactUsPage = () => {
               <MapPin size={24} />
             </div>
             <h4>Visit Our Clinic</h4>
-            <p><strong>DD's MaxxPet Clinic:</strong> Clinic site -3, Main market, Sector 17 Rd, near Dristi eye centre, Sector 17, Faridabad, Haryana 121002</p>
+            <p><strong>Dog & Cat Clinic :</strong> Clinic site -3, Main market, Sector 17 Rd, near Dristi eye centre, Preet Vihar, Delhi, Haryana 121002</p>
           </div>
           <div className="contact-info-card-v2">
             <div className="contact-info-icon">
@@ -142,7 +142,7 @@ const ContactUsPage = () => {
                 <CheckCircle2 size={24} style={{ flexShrink: 0 }} />
                 <span>
                   <strong>Appointment request sent!</strong><br />
-                  We'll call you within 24 hours to confirm. Thank you for choosing DD's MaxxPet Clinic.
+                  We'll call you within 24 hours to confirm. Thank you for choosing Dog & Cat Clinic .
                 </span>
               </div>
             ) : (
@@ -198,7 +198,7 @@ const ContactUsPage = () => {
             <div className="clinic-card">
               <div className="clinic-card-header">
                 <MapPin size={18} />
-                <h4>DD's MaxxPet Clinic</h4>
+                <h4>Dog & Cat Clinic </h4>
               </div>
               <div className="clinic-card-body">
                 <div className="clinic-info-row">
@@ -237,7 +237,7 @@ const ContactUsPage = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="DD's MaxxPet Clinic Map"
+            title="Dog & Cat Clinic  Map"
           />
         </div>
       </div>

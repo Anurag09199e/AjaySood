@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   {
-    q: "How do I make an appointment at DD's MaxxPet Clinic?",
+    q: "How do I make an appointment at Dog & Cat Clinic ?",
     a: "You can book an appointment by calling our clinic directly (088007 56268) or by using our Contact form online. We try to accommodate same-day appointments for urgent cases."
   },
   {
@@ -43,7 +43,7 @@ const FAQ = () => {
             <span className="dot" /> Got Questions?
           </div>
           <h2>Frequently Asked <span className="gradient-text">Questions</span></h2>
-          <p className="text-muted mt-4">Everything you need to know about pet care at DD's MaxxPet Clinic.</p>
+          <p className="text-muted mt-4">Everything you need to know about pet care at Dog & Cat Clinic .</p>
         </div>
 
         <div className="faq-container">

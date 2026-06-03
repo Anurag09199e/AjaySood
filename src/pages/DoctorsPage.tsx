@@ -7,9 +7,9 @@ import SEO from '../components/Shared/SEO';
 const DoctorsPage = () => {
   return (
     <div>
-      <SEO 
-        title="Meet Our Expert Veterinarians | DD's MaxxPet Clinic Faridabad" 
-        description="Meet the expert veterinary team at DD's MaxxPet Clinic in Faridabad. Our doctors bring decades of experience and passion to ensure your pet's best health."
+      <SEO
+        title="Meet Our Expert Veterinarians | Dog & Cat Clinic Preet Vihar, Delhi"
+        description="Meet the expert veterinary team at Dog & Cat Clinic  in Preet Vihar, Delhi. Our doctors bring decades of experience and passion to ensure your pet's best health."
         canonical="/doctors"
       />
       {/* Page Hero */}

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
-import doctorImg from '../image/about_us.png';
+import doctorImg from '../image/ajaysood.jpg';
 
 const About = () => {
   return (
@@ -11,10 +11,10 @@ const About = () => {
 
           {/* LEFT: Image & Credentials */}
           <div className="about-img-stack animate-left">
-            <div className="about-img-primary" style={{ width: "500px", height: "500px", objectFit: "cover", marginLeft: "50px" }}>
+            <div className="about-img-primary" style={{ width: "500px", height: "350px", objectFit: "cover", marginLeft: "50px" }}>
               <img
                 src={doctorImg}
-                alt="Dr. Dheeraj Gaur"
+                alt="Dr. Ajay Sood"
 
               />
             </div>
@@ -43,11 +43,11 @@ const About = () => {
               <span className="dot" /> Our Founder
             </div>
             <h2 className="mb-4">
-              Dr. <span className="gradient-text">Dheeraj Gaur</span>
+              <span className="gradient-text"> Dr. Ajay Sood</span>
             </h2>
 
             <p className="about-bio">
-              Founded on the principles of excellence and empathy, DD's MaxxPet Clinic has become a leading name in veterinary care in Faridabad. Dr. Dheeraj Gaur brings over 15 years of surgical and medical experience, dedicated to providing the highest standard of health and wellness for your animal companions.
+              Dog and Cat clinic was started by Dr Ajay Sood in 1993. Dr Sood holds a veterinary degree from College of veterinary science Kerala. We started with one handyman and kept on increasing the strength of staff with the increase of patients. All pet companions deserve compassionate veterinary care. We are Dog and Cat Clinic, Preet Vihar - a specialized small animal surgery and pet clinic at B/717, Aditya Complex, Preet Vihar, Delhi-110092. We are passionate about providing the best pet care to your furry friends. Apart from the veterinary services we also have a pet store. We keep all kind of pet accessories and pet food from a variety of brands.
             </p>
 
             <div className="about-dr-stats">

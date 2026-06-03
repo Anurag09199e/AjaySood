@@ -2,8 +2,8 @@ import { MapPin, Phone, Clock } from 'lucide-react';
 
 const clinics = [
   {
-    name: "DD's MaxxPet Clinic",
-    address: "Clinic site -3, Main market, Sector 17 Rd, near Dristi eye centre, Sector 17, Faridabad, Haryana 121002",
+    name: "Dog & Cat Clinic ",
+    address: "B/717, Aditya Complex, Preet Vihar, Delhi-110092 ",
     phone: "088007 56268",
     hours: "10 AM – 8 PM, Mon-Sun",
     mapUrl: "https://maps.google.com/?q=Maxx+Pet+Clinic+Faridabad"
@@ -19,7 +19,7 @@ const Locations = () => {
             <span className="dot" /> Visit Us
           </div>
           <h2>Our Clinic <span className="gradient-text">Location</span></h2>
-          <p className="text-muted mt-4">Visit our conveniently located clinic in Faridabad, ready to serve you and your pet.</p>
+          <p className="text-muted mt-4">Visit our conveniently located clinic in Preet Vihar, Delhi, ready to serve you and your pet.</p>
         </div>
 
         <div className="locations-grid">
@@ -86,7 +86,7 @@ const Locations = () => {
           height: '380px'
         }}>
           <iframe
-            title="DD's MaxxPet Clinic Location Map"
+            title="Dog & Cat Clinic  Location Map"
             src="https://maps.google.com/maps?q=Maxx%20Pet%20Clinic%20Sector%2017%20Faridabad&output=embed"
             width="100%"
             height="100%"

@@ -10,10 +10,10 @@ const Footer = () => {
           {/* Brand */}
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/logo.png" alt="DD's MaxxPet Clinic Logo" style={{ height: '40px', width: 'auto' }} />
+              <img src="/logo.png" alt="Dog & Cat Clinic  Logo" style={{ height: '40px', width: 'auto' }} />
             </div>
             <p>
-              Your trusted partner in pet health. We provide expert veterinary care with compassion and dedication in Faridabad.
+              Your trusted partner in pet health. We provide expert veterinary care with compassion and dedication in Preet Vihar, Delhi.
             </p>
             <div className="footer-social">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon" aria-label="Instagram">
@@ -71,7 +71,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            © {new Date().getFullYear()} DD's MaxxPet Clinic. All rights reserved.
+            © {new Date().getFullYear()} Dog & Cat Clinic. All rights reserved.
             <span> · </span>
             <Link to="/privacy-policy" style={{ textDecoration: 'underline' }}>Privacy Policy</Link>
             <span> · </span>

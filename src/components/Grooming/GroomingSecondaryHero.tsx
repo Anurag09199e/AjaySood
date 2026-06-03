@@ -18,10 +18,10 @@ const GroomingSecondaryHero = () => {
         <div className="grsh-content-wrapper animate-fade-in">
 
           <h1 className="grsh-title">
-            <span className="grsh-title-pink">Pet Grooming in Faridabad is More Than Just Styling</span>
+            <span className="grsh-title-pink">Pet Grooming in Preet Vihar, Delhi is More Than Just Styling</span>
           </h1>
 
-          <p className='text-bold'>At DD's MaxxPet Clinic, we believe that grooming is an essential part of your pet's overall health and well-being. Our professional grooming services go beyond simple haircuts — we provide comprehensive care that keeps your pet clean, comfortable, and happy.</p><br />
+          <p className='text-bold'>At Dog & Cat Clinic , we believe that grooming is an essential part of your pet's overall health and well-being. Our professional grooming services go beyond simple haircuts — we provide comprehensive care that keeps your pet clean, comfortable, and happy.</p><br />
           <Link to="/contact-us" className="btn grsh-btn">
             Book Grooming Service
           </Link>

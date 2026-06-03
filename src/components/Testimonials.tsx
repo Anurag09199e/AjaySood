@@ -10,14 +10,14 @@ const testimonialsData = [
     rating: 5
   },
   {
-    text: "We've been coming to DD's MaxxPet Clinic for years. Our family's pets have always been treated here. The trust and continuity of care is unmatched.",
+    text: "We've been coming to Dog & Cat Clinic  for years. Our family's pets have always been treated here. The trust and continuity of care is unmatched.",
     name: "Sunita Kapoor",
     pet: "Bella (Regular Client)",
     image: "/src/image/testimonials.png",
     rating: 5
   },
   {
-    text: "Quick, professional, and so compassionate. When my Labrador had an emergency, DD's MaxxPet Clinic was available immediately. I can't thank Dr. Gaur and his team enough.",
+    text: "Quick, professional, and so compassionate. When my Labrador had an emergency, Dog & Cat Clinic  was available immediately. I can't thank Dr. Gaur and his team enough.",
     name: "Arjun Nair",
     pet: "Max (Labrador)",
     image: "/src/image/testimonials.png",
@@ -31,7 +31,7 @@ const testimonialsData = [
     rating: 5
   },
   {
-    text: "DD's MaxxPet Clinic is the only place I trust for my two cats' vaccinations. The team is knowledgeable, the facility is clean, and they always explain everything clearly. 10/10 every time.",
+    text: "Dog & Cat Clinic  is the only place I trust for my two cats' vaccinations. The team is knowledgeable, the facility is clean, and they always explain everything clearly. 10/10 every time.",
     name: "Kiran Bhat",
     pet: "Luna & Oreo",
     image: "/src/image/testimonials.png",
@@ -129,7 +129,7 @@ const Testimonials = () => {
             Trusted by <span>Thousands</span> of Pet Parents
           </h2>
           <p style={{ color: 'rgba(255, 255, 255, 0.65)', marginTop: '1rem' }}>
-            Hear from the families who trust DD's MaxxPet Clinic with their most beloved companions.
+            Hear from the families who trust Dog & Cat Clinic  with their most beloved companions.
           </p>
         </div>
 

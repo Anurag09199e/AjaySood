@@ -10,7 +10,7 @@ const CTABanner = () => {
             <p className="overline">Ready to get started?</p>
             <h2>Your Pet Deserves the <br />Best Care Available</h2>
             <p className="sub">
-              Join thousands of Faridabad pet parents who trust DD's MaxxPet Clinic for expert veterinary care. Book an appointment online or call us directly.
+              Join thousands of Preet Vihar,Delhi pet parents who trust Dog & Cat Clinic for expert veterinary care. Book an appointment online or call us directly.
             </p>
           </div>
 

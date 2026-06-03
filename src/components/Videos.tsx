@@ -14,7 +14,7 @@ const Videos = () => {
             <span className="dot" /> Media
           </div>
           <h2>Learn from <span className="gradient-text">Our Experts</span></h2>
-          <p className="text-muted mt-4">Watch helpful veterinary advice and pet care guides from Dr. Dheeraj Gaur and the DD's MaxxPet Clinic team.</p>
+          <p className="text-muted mt-4">Watch helpful veterinary advice and pet care guides from Dr. Ajay Sood  and the Dog & Cat Clinic  team.</p>
         </div>
 
         <div className="video-grid">
@@ -25,7 +25,7 @@ const Videos = () => {
             >
               <iframe
                 src={vid}
-                title={`DD's MaxxPet Clinic Tutorial ${idx + 1}`}
+                title={`Dog & Cat Clinic  Tutorial ${idx + 1}`}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />

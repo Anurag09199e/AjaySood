@@ -75,7 +75,7 @@ const SkinCarePageContent = () => {
 
       <VaccinationSubHero
         titleLine1="Cats Skin Care"
-        titleLine2="in Faridabad"
+        titleLine2="in Preet Vihar, Delhi"
         description="Cats are prone to sensitive skin, fungal infections, and stress-induced dermatitis. Our gentle, specialized feline skin care protocols ensure your cat's coat stays lustrous and irritation-free throughout all life stages."
         image={skincareCatImg}
         imageLeft={false}

@@ -52,7 +52,7 @@ const PathologyPageContent = () => {
 
       <VaccinationSubHero
         titleLine1="Dogs Pathology"
-        titleLine2="in Faridabad"
+        titleLine2="in Preet Vihar, Delhi"
         description="In critical care, time is of the essence. Our modern in-house lab performs blood chemistry, complete blood counts (CBC), and urinalysis within minutes — giving your dog the fastest path to accurate diagnosis and treatment."
         image={pathologyImg}
         imageLeft={true}
@@ -74,7 +74,7 @@ const PathologyPageContent = () => {
 
       <VaccinationSubHero
         titleLine1="Cats Pathology"
-        titleLine2="in Faridabad"
+        titleLine2="in Preet Vihar, Delhi"
         description="Routine lab work helps us understand your cat's normal baseline and notice minor unhealthy shifts before symptoms appear — ensuring longevity and quality of life for your feline companion."
         image={pathologyImg}
         imageLeft={false}

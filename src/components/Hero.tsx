@@ -35,11 +35,11 @@ const Hero = () => {
       <div className="hero-inner">
         <div className="hero-content-col">
           <h1 className="hero-title" style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', lineHeight: '1.3' }}>
-            DD's MaxxPet Clinic <br/><span className="hero-title-accent" style={{ fontSize: 'clamp(1rem, 3vw, 2rem)' }}>Best Pet Clinic in Faridabad</span>
+            Dog & Cat Clinic <br /><span className="hero-title-accent" style={{ fontSize: 'clamp(1rem, 3vw, 2rem)' }}>Best Pet Clinic in Preet Vihar, Delhi</span>
           </h1>
           <p className="hero-desc">
-            <strong>DD's MaxxPet Clinic</strong> — fostering compassion and advanced healthcare for pets.<span className="hero-desc-sub">
-              Looking for the <span className="hero-desc-accent">Best Pet Clinic in Faridabad</span> ? At DD's MaxxPet Clinic, we provide exceptional veterinary care with a focus on compassion, safety, and advanced treatment. From routine check-ups to specialized care, we ensure your pets stay healthy, happy, and protected at every stage of their life.
+            <strong>Dog & Cat Clinic</strong> — fostering compassion and advanced healthcare for pets.<span className="hero-desc-sub">
+              Looking for the <span className="hero-desc-accent">Best Pet Clinic in Preet Vihar, Delhi</span> ? At Dog & Cat Clinic , we provide exceptional veterinary care with a focus on compassion, safety, and advanced treatment. From routine check-ups to specialized care, we ensure your pets stay healthy, happy, and protected at every stage of their life.
             </span>
           </p>
 
@@ -78,7 +78,7 @@ const Hero = () => {
                 />
                 <img
                   src={img}
-                  alt="DD's MaxxPet Clinic"
+                  alt="Dog & Cat Clinic "
                   className="hero-slide-main"
                 />
               </div>

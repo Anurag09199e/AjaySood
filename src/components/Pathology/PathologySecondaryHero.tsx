@@ -17,7 +17,7 @@ const PathologySecondaryHero = () => {
         <div className="psh-content-wrapper animate-fade-in">
 
           <h1 className="psh-title">
-            <span className="psh-title-green">Pets Pathological Laboratory in Faridabad</span>
+            <span className="psh-title-green">Pets Pathological Laboratory in Preet Vihar, Delhi</span>
           </h1>
           <p className='text-bold'>Advanced in-house diagnostics for fast, accurate results — helping us detect and treat health issues before they become serious</p><br />
           <Link to="/contact-us" className="btn btn-primary psh-btn">

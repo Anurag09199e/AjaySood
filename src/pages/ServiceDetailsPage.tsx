@@ -16,8 +16,8 @@ const ServiceDetailsPage = () => {
 
   return (
     <div>
-      <SEO 
-        title={`${service.title} | DD's MaxxPet Clinic Veterinary Centre`} 
+      <SEO
+        title={`${service.title} | Dog & Cat Clinic  Veterinary Centre`}
         description={service.metaDescription}
         canonical={`/services/${service.slug}`}
       />
@@ -114,7 +114,7 @@ const ServiceDetailsPage = () => {
               <span className="dot" /> What We Do
             </div>
             <h2>Process &amp; <span className="gradient-text">Treatments</span></h2>
-            <p className="text-muted mt-4">A full range of {service.shortTitle.toLowerCase()} solutions under one roof in Faridabad.</p>
+            <p className="text-muted mt-4">A full range of {service.shortTitle.toLowerCase()} solutions under one roof in Preet Vihar, Delhi.</p>
           </div>
 
           <div className="specialty-procedures-grid">
@@ -136,7 +136,7 @@ const ServiceDetailsPage = () => {
             <div className="section-pill">
               <span className="dot" /> Our Edge
             </div>
-            <h2>Why Choose <span className="gradient-text">DD's MaxxPet Clinic</span></h2>
+            <h2>Why Choose <span className="gradient-text">Dog & Cat Clinic </span></h2>
           </div>
 
           <div className="specialty-why-grid">

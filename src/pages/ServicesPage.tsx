@@ -8,9 +8,9 @@ import SEO from '../components/Shared/SEO';
 const ServicesPage = () => {
   return (
     <div>
-      <SEO 
-        title="Professional Veterinary Services | DD's MaxxPet Clinic Faridabad" 
-        description="Explore the wide range of professional veterinary services at DD's MaxxPet Clinic, Faridabad, from routine checkups and vaccinations to advanced surgeries."
+      <SEO
+        title="Professional Veterinary Services | Dog & Cat Clinic  Preet Vihar, Delhi"
+        description="Explore the wide range of professional veterinary services at Dog & Cat Clinic , Preet Vihar, Delhi, from routine checkups and vaccinations to advanced surgeries."
         canonical="/services"
       />
       {/* Page Hero */}

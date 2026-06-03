@@ -53,7 +53,7 @@ const GroomingPageContent = () => {
 
       <VaccinationSubHero
         titleLine1="Best Dogs Grooming "
-        titleLine2="in Faridabad"
+        titleLine2="in Preet Vihar, Delhi"
         description="Our dog grooming service includes a full range of treatments to keep your pup looking and feeling great. From professional haircuts and breed-specific styling to gentle baths, we handle your pet with the utmost care."
         image={dogGroomingImg}
         imageLeft={true}
@@ -75,7 +75,7 @@ const GroomingPageContent = () => {
 
       <VaccinationSubHero
         titleLine1="Best Cats Grooming"
-        titleLine2="in Faridabad"
+        titleLine2="in Preet Vihar, Delhi"
         description="Grooming is essential for feline health. Our cat grooming service features stress-free handling and gentle techniques, ensuring your cat leaves our salon feeling relaxed, revitalized, and perfectly clean."
         image={catGroomingImg}
         imageLeft={false}

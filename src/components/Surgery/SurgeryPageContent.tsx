@@ -45,7 +45,7 @@ const SurgeryPageContent = () => {
 
       <ServiceSubHero
         titleLine1="Expert Pet Surgery Clinic"
-        titleLine2="in faridabad"
+        titleLine2="in Preet Vihar, Delhi"
         description="oful. sncy interventions, trust our experienced surgeons."
         image={surgeryHeroImg}
         imageLeft={true}
@@ -68,7 +68,7 @@ const SurgeryPageContent = () => {
 
       <ServiceSubHero
         titleLine1="Best cats surgery"
-        titleLine2="in faridabad"
+        titleLine2="in Preet Vihar, Delhi"
         description="pled with scheduled pain remedies, ensuring maximum comfort once your pet comes back home to rest."
         image={surgeryAddImg}
         imageLeft={false}

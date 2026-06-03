@@ -18,9 +18,9 @@ const VaccinationSecondaryHero = () => {
         <div className="vsh-content-wrapper animate-fade-in">
 
           <h1 className="vsh-title">
-            <span className="vsh-title-pink">Pets vaccination in Faridabad</span>
+            <span className="vsh-title-pink">Pets vaccination in Preet Vihar, Delhi</span>
           </h1>
-          <p className='text-bold'>As a best pets vaccination clinic in Faridabad, our goal is to provide preventive care that ensures your pets stay protected throughout their lives</p><br />
+          <p className='text-bold'>As a best pets vaccination clinic in Preet Vihar, Delhi, our goal is to provide preventive care that ensures your pets stay protected throughout their lives</p><br />
           <Link to="/contact-us" className="btn btn-primary vsh-btn">
             Book Appointment
           </Link>
